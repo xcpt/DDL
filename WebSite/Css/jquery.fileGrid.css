@@ -1,0 +1,106 @@
+﻿.jquery_filegrid{float:left;padding: 2px;margin: 0px; text-align:left;margin-bottom:5px;}
+.jquery_filegrid li {width:93px; height:110px; list-style: none;list-style-type:none;margin:3px;float:left;overflow:hidden;padding:3px;border:solid 1px #c0c0c0;}
+.jquery_filegrid ul {list-style-type:none;padding: 0px;margin: 0px;}
+.jquery_filegrid_border {height:16px;width:16px; border:none; float:left; }
+.jquery_filegrid_back{height:16px; overflow:hidden;}
+.jquery_filegrid li:hover {
+	cursor:pointer;background-color:#BDF;
+}
+.jquery_filegrid_font 
+{
+	text-align:left;
+	color: #333;
+	text-decoration: none;
+	display: block;
+	padding: 2px;
+	font-size: 12px;
+	font-family:Arial, "simsun", sans-serif;
+	width:90px;
+	height:90px;
+	float:left;
+}
+
+.jquery_filegrid div.wait { background: url(../images/File/Grid/spinner.gif) 1px 1px no-repeat;}
+.jquery_filegrid_border div.directory {background: url(../images/File/Grid/directory.png) 1px 1px no-repeat;}
+.jquery_filegrid_back div.back { background: url(../images/File/Grid/back.png) 1px 1px no-repeat;}
+.jquery_filegrid_border div.file {background: url(../images/File/Grid/file.png) 1px 1px no-repeat;width:73px;padding-left:18px;height:20px; overflow:hidden;border-bottom:solid 1px #c0c0c0;}
+/* File Extensions*/
+.jquery_filegrid_border div.ext_3gp { background-image:url(../images/File/Grid/film.png)}
+.jquery_filegrid_border div.ext_afp { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_afpa { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_asax { background-image:url(../images/File/Grid/asax.gif)}
+.jquery_filegrid_border div.ext_ascx { background-image:url(../images/File/Grid/ascx.gif)}
+.jquery_filegrid_border div.ext_ashx { background-image:url(../images/File/Grid/ashx.gif)}
+.jquery_filegrid_border div.ext_asmx { background-image:url(../images/File/Grid/asmx.gif)}
+.jquery_filegrid_border div.ext_asp { background-image:url(../images/File/Grid/asp.gif)}
+.jquery_filegrid_border div.ext_aspx { background-image:url(../images/File/Grid/aspx.gif)}
+.jquery_filegrid_border div.ext_avi { background-image:url(../images/File/Grid/film.png)}
+.jquery_filegrid_border div.ext_bat { background-image:url(../images/File/Grid/application.png)}
+.jquery_filegrid_border div.ext_bmp { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_c { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_cfm { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_cgi { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_com { background-image:url(../images/File/Grid/application.png)}
+.jquery_filegrid_border div.ext_config { background-image:url(../images/File/Grid/config.gif)}
+.jquery_filegrid_border div.ext_cpp { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_css { background-image:url(../images/File/Grid/css.gif)}
+.jquery_filegrid_border div.ext_cs { background-image:url(../images/File/Grid/cs.gif)}
+.jquery_filegrid_border div.ext_doc { background-image:url(../images/File/Grid/doc.png)}
+.jquery_filegrid_border div.ext_dll { background-image:url(../images/File/Grid/dll.gif)}
+.jquery_filegrid_border div.ext_db { background-image:url(../images/File/Grid/dll.gif)}
+.jquery_filegrid_border div.ext_exe { background-image:url(../images/File/Grid/exe.gif)}
+.jquery_filegrid_border div.ext_gif { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_fla { background-image:url(../images/File/Grid/flash.png)}
+.jquery_filegrid_border div.ext_h { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_htm { background-image:url(../images/File/Grid/htm.gif)}
+.jquery_filegrid_border div.ext_html { background-image:url(../images/File/Grid/htm.gif)}
+.jquery_filegrid_border div.ext_jar { background-image:url(../images/File/Grid/java.png)}
+.jquery_filegrid_border div.ext_jpg { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_jpeg { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_js { background-image:url(../images/File/Grid/js.gif)}
+.jquery_filegrid_border div.ext_lasso { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_log { background-image:url(../images/File/Grid/txt.png)}
+.jquery_filegrid_border div.ext_m4p { background-image:url(../images/File/Grid/music.png)}
+.jquery_filegrid_border div.ext_master { background-image:url(../images/File/Grid/master.gif)}
+.jquery_filegrid_border div.ext_mdb { background-image:url(../images/File/Grid/mdb.gif)}
+.jquery_filegrid_border div.ext_mov { background-image:url(../images/File/Grid/film.png)}
+.jquery_filegrid_border div.ext_mp3 { background-image:url(../images/File/Grid/music.png)}
+.jquery_filegrid_border div.ext_mp4 { background-image:url(../images/File/Grid/film.png)}
+.jquery_filegrid_border div.ext_mpg { background-image:url(../images/File/Grid/film.png)}
+.jquery_filegrid_border div.ext_mpeg { background-image:url(../images/File/Grid/film.png)}
+.jquery_filegrid_border div.ext_ogg { background-image:url(../images/File/Grid/music.png)}
+.jquery_filegrid_border div.ext_pcx { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_pdf { background-image:url(../images/File/Grid/pdf.png)}
+.jquery_filegrid_border div.ext_php { background-image:url(../images/File/Grid/php.png)}
+.jquery_filegrid_border div.ext_png { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_ppt { background-image:url(../images/File/Grid/ppt.png)}
+.jquery_filegrid_border div.ext_psd { background-image:url(../images/File/Grid/psd.gif)}
+.jquery_filegrid_border div.ext_pl { background-image:url(../images/File/Grid/script.png)}
+.jquery_filegrid_border div.ext_py { background-image:url(../images/File/Grid/script.png)}
+.jquery_filegrid_border div.ext_rar { background-image:url(../images/File/Grid/rar.gif)}
+.jquery_filegrid_border div.ext_rb { background-image:url(../images/File/Grid/ruby.png)}
+.jquery_filegrid_border div.ext_rbx { background-image:url(../images/File/Grid/ruby.png)}
+.jquery_filegrid_border div.ext_resx { background-image:url(../images/File/Grid/resx.gif)}
+.jquery_filegrid_border div.ext_rhtml { background-image:url(../images/File/Grid/ruby.png)}
+.jquery_filegrid_border div.ext_rpm { background-image:url(../images/File/Grid/linux.png)}
+.jquery_filegrid_border div.ext_ruby { background-image:url(../images/File/Grid/ruby.png)}
+.jquery_filegrid_border div.ext_sitemap { background-image:url(../images/File/Grid/sitemap.gif)}
+.jquery_filegrid_border div.ext_sql { background-image:url(../images/File/Grid/sql.gif)}
+.jquery_filegrid_border div.ext_swf { background-image:url(../images/File/Grid/flash.png)}
+.jquery_filegrid_border div.ext_tif { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_tiff { background-image:url(../images/File/Grid/picture.png)}
+.jquery_filegrid_border div.ext_txt { background-image:url(../images/File/Grid/txt.png)}
+.jquery_filegrid_border div.ext_vb { background-image:url(../images/File/Grid/code.png)}
+.jquery_filegrid_border div.ext_wav { background-image:url(../images/File/Grid/music.png)}
+.jquery_filegrid_border div.ext_wmv { background-image:url(../images/File/Grid/film.png)}
+.jquery_filegrid_border div.ext_xls { background-image:url(../images/File/Grid/xls.png)}
+.jquery_filegrid_border div.ext_xml { background-image:url(../images/File/Grid/xml.gif)}
+.jquery_filegrid_border div.ext_xsl { background-image:url(../images/File/Grid/xsl.gif)}
+.jquery_filegrid_border div.ext_zip { background-image:url(../images/File/Grid/zip.png)}
+.jquery_filegrid_border div.ext_gzip { background-image:url(../images/File/Grid/zip.png)}
+
+
+.jquery_filegrid li.jquery_filegrid_border_foucs
+{
+	background:#BDF url(../images/icon/apply.png) right 1px no-repeat;
+}

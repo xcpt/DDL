@@ -1,0 +1,75 @@
+﻿.popUpMenu{
+	margin:0;padding:0;list-style-type:none;
+	position:absolute;float:left;
+	border:1px solid #999; 
+	border-left:8px solid #718bb7;
+	_width:120px;min-width:120px;
+	white-space:wrap;
+	padding:1px; 
+	font-size:12px;
+	background:#f0f0f0;  
+	display:none;
+	opacity:0.85;
+	z-index:100000;
+}
+.popUpMenu li{
+	position:relative; 
+}
+.popUpMenu li.splitLine{
+	background:#aaa; 
+	height:1px;
+	overflow:hidden; 
+	font-size:0;
+	line-height:1px; 
+	border-bottom:1px solid #fff; 
+	margin:1px 2px 2px 10px; 
+}
+ 
+.popUpMenu li a,.popUpMenu li.disabled span{
+	color:#000;text-decoration:none;
+	display:block;zoom:1;
+	line-height:20px;
+	height:20px;
+	text-indent:24px;
+	width:120px; 
+	padding:3px 2px; margin: 0px 2px 0px 3px;
+}
+ 
+.popUpMenu li.disabled span{
+	color:#999; 
+	cursor:default;
+}
+ 
+.popUpMenu li a.toSub{
+	background:url(../images/contextmenu/m_arrow.gif) no-repeat 100% 50%; 
+}
+ 
+.popUpMenu li a:hover,.popUpMenu li.open a{
+	cursor:pointer;
+	line-height:18px;
+	height:18px;
+	width:118px;
+	border: #aaccf6 1px solid; padding:3px 1px; margin: 0px 2px 0px 3px; background: url(../images/contextmenu/m_item.gif) repeat-x 50% bottom;
+}
+ 
+.popUpMenu li span{
+	display:block; 
+	width:100%;
+	background-position:2% 50%;
+	background-repeat:no-repeat;
+}
+ 
+.ico
+{
+	background: url(../images/contextmenu/m_splitLine.gif) repeat-x center 50%;
+	width:80px;height:80px;
+}
+ 
+.myIco{
+	position:absolute; 
+	left:20px;
+	top:20px;
+	font-size:12px;
+	color:#990000; 
+	text-align:center;
+}

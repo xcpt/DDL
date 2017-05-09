@@ -1,0 +1,15 @@
+H:\程序\门店管理\Web.Model\bin\Debug\Web.Model.dll
+H:\程序\门店管理\Web.Model\bin\Debug\Web.Model.pdb
+H:\程序\门店管理\Web.Model\obj\Debug\Web.Model.dll
+H:\程序\门店管理\Web.Model\obj\Debug\Web.Model.pdb
+G:\程序\门店管理\Web.Model\bin\Debug\Web.Model.dll
+G:\程序\门店管理\Web.Model\bin\Debug\Web.Model.pdb
+G:\程序\门店管理\Web.Model\obj\Debug\Web.Model.csprojResolveAssemblyReference.cache
+G:\程序\门店管理\Web.Model\obj\Debug\Web.Model.dll
+G:\程序\门店管理\Web.Model\obj\Debug\Web.Model.pdb
+H:\程序\门店管理\Web.Model\obj\Debug\Web.Model.csprojResolveAssemblyReference.cache
+E:\程序\门店管理\Web.Model\bin\Debug\Web.Model.dll
+E:\程序\门店管理\Web.Model\bin\Debug\Web.Model.pdb
+E:\程序\门店管理\Web.Model\obj\Debug\Web.Model.csprojResolveAssemblyReference.cache
+E:\程序\门店管理\Web.Model\obj\Debug\Web.Model.dll
+E:\程序\门店管理\Web.Model\obj\Debug\Web.Model.pdb

@@ -1,0 +1,64 @@
+﻿.PageViewModiy div
+{
+	vertical-align:middle;
+}
+
+.PageViewModiy fieldset{float:left;margin:1px;padding:1px;}
+.PageViewModiy fieldset legend img{vertical-align:middle;cursor:pointer;}
+
+
+
+/*##### the table stuff #####*/
+table.sar-table {
+    border-collapse:collapse;
+    font-family:Arial, "simsun", sans-serif;
+}
+table.sar-table td, table.sar-table th {
+    text-align:center;
+    vertical-align:middle;
+}
+
+table.sar-table tr{
+	marging:0;
+	padding:0;
+}
+
+table.sar-table td, table.sar-table th {
+    border:1px solid #CCC;
+    font-size:12px;
+    padding:3px;
+}
+
+table.sar-table th {
+	background:none repeat scroll 0 0;
+    font-weight:normal;
+    height:20px;
+    cursor:pointer;
+}
+
+/*##### the dragtable stuff #####*/
+.dragtable-sortable { 
+	list-style-type: none; margin: 0; padding: 0; 
+}
+.dragtable-sortable li {
+	margin: 0; padding: 0; float: left; font-size: 1em; background: white; 
+}
+
+.dragtable-sortable th, .dragtable-sortable td{
+	border-left: 0px;
+}
+
+.dragtable-sortable li:first-child th, .dragtable-sortable li:first-child td {
+	border-left: 1px solid #CCC; 
+}
+
+.ui-sortable-helper {
+	opacity: 0.7;filter: alpha(opacity=70);
+}
+.ui-sortable-placeholder { 
+	border: 1px dotted black; background: #EFEFEF !important; visibility: visible !important;
+}
+.ui-sortable-placeholder * { 
+	opacity: 0.0; visibility: hidden; 
+}
+

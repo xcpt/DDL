@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Web.CS.Manager.Users.Lists_Chart" %>
+<embed width="600" height="350" flashvars="chartWidth=600&amp;chartHeight=350&amp;debugMode=0&amp;DOMId=Chart1&amp;registerWithJS=0&amp;scaleMode=noScale&amp;lang=EN&amp;dataXML=<%=Base.Fun.fun.ViewContent(strXml.ToString())%>" allowscriptaccess="always" quality="high" name="Chart1" wmode="opaque" id="Chart1" src="Images/Flash/FCF_MSLine.swf" type="application/x-shockwave-flash">

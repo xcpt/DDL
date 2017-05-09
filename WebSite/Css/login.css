@@ -1,0 +1,60 @@
+body {font:12px "Microsoft YaHei","Arial",sans-serif; background: url(../images/back.gif) center top}
+html,body{-webkit-text-size-adjust:none;}
+body,ul,li,p,h2,h3,h4,span,dl,dt,dd,form,table,td,div,input{margin:0;padding:0;}
+img{border:0;}
+div,p{display:block;}
+ul,li{list-style:none; font-size:12px;}
+a{text-decoration:none; cursor:pointer;color:#575f6e;}
+.clear{clear:both; overflow:hidden;}
+
+
+.login{margin:0 auto;width:538px;height:375px; background: url(../images/loginbg.png) no-repeat;margin-top:5%;padding:272px 0 0 80px;font-family:"Microsoft YaHei";}
+.login .name{padding-left:110px;height:65px;}
+.login .name input{width:270px;height:40px;line-height:36px;font-size:16px;color:#666; background:none; border:none;font-family:"Microsoft YaHei";}
+.login .yzm{padding-left:110px;height:60px;padding-top:3px;}
+.login .yzm input{width:70px;height:40px;line-height:40px;font-size:16px;color:#666; background:none; border:none;font-family:"Microsoft YaHei";}
+.login .yzm img{padding-left:20px;}
+.online{font-size:16px;height:42px;color:#333}
+.online label{cursor:pointer;padding-left:10px;}
+.online input{cursor:pointer;}
+.denglu input{width:378px;height:47px; background:none; border:none; cursor:pointer;font-size:20px;color:#fff;font-family:"Microsoft YaHei";}
+
+.copy{ position:absolute;bottom:20px; text-align:center;width:100%; color:#fff;line-height:30px;}
+
+/*后台首页*/
+.admin_bg{ background:none;}
+.admin_nr{ padding:34px 32px;}
+.admin_list{ overflow:hidden; zoom:1; padding:20px 6px 0; border:#c4c4c4 solid 1px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.admin_list li{ float:left; padding:0 20px 20px;}
+.admin_list li a{ display:block; width:196px; height:50px; color:#0b7dc3; text-align:center; font-size:20px; padding-top:60px;}
+.admin_list li.bg1 a{ background:url(../images/sy_bg1.gif) no-repeat;}
+.admin_list li.bg2 a{ background:url(../images/sy_bg2.gif) no-repeat;}
+.admin_list li.bg3 a{ background:url(../images/sy_bg3.gif) no-repeat;}
+.admin_list li.bg4 a{ background:url(../images/sy_bg4.gif) no-repeat;}
+.admin_list li.bg5 a{ background:url(../images/sy_bg5.gif) no-repeat;}
+.admin_list li a:hover{ color:#f60;}
+.admin_list li.bg1 a:hover{ background:url(../images/sya_bg1.gif) no-repeat;}
+.admin_list li.bg2 a:hover{ background:url(../images/sya_bg2.gif) no-repeat;}
+.admin_list li.bg3 a:hover{ background:url(../images/sya_bg3.gif) no-repeat;}
+.admin_list li.bg4 a:hover{ background:url(../images/sya_bg4.gif) no-repeat;}
+.admin_list li.bg5 a:hover{ background:url(../images/sya_bg5.gif) no-repeat;}
+
+.face{ overflow:hidden; zoom:1; padding-top:40px;}
+.face_fl{ float:left; width:60%;text-align:left;}
+.welcome{ padding:40px 35px; background:#eee; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;text-align:left;}
+.welcome h2{ font-weight:400; font-size:48px; color:#363636;}
+.welcome p{ font-size:30px; color:#363636; padding:35px 0 20px;}
+.welcome ul li{ font-size:20px; border-bottom:#fff solid 1px; height:50px; line-height:50px;}
+.welcome ul li a{ color:#363636;}
+.welcome ul li a:hover{ color:#f60;}
+.face_fr{ float:left; width:37%; padding-left:3%;}
+
+.mess{ border:#c4c4c4 solid 1px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; background:url(../images/mess.gif) repeat-x left top; margin-bottom:40px;text-align:left;}
+.mess h2{ font-weight:400; background:url(../images/mess_h.gif) no-repeat 20px center; padding-left:60px; height:44px; line-height:44px;}
+.mess .text{ background:#d9edf6; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; margin:21px 25px 25px; padding:30px 35px; color:#545454;}
+.mess .text a{ font-style:italic; color:#0b7dc3; font-size:18px; text-decoration:underline; padding:0 2px;}
+.mess .text a:hover{ color:#f60;}
+
+
+#WinLoadViewWait{color:#fff;}
+

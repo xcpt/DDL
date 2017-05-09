@@ -1,0 +1,54 @@
+﻿            /* wrapper divs */
+            .custom-checkbox,
+            .custom-radio {
+                position: relative; 
+                float:left;
+            }
+            /* input, label positioning */
+            .custom-checkbox input,
+            .custom-radio input {
+                position:absolute;
+                z-index:0;
+                border:0px;
+                left:-1px;top:-2px;
+            }
+            .custom-checkbox label,
+            .custom-radio label {
+                display: block;
+                position: relative;
+                z-index:1;
+                font-size: 12px;
+                line-height: 1;
+                padding: 5px 0 5px 30px;
+                margin: 0;
+                cursor: pointer;
+            }
+            /* states */
+            .custom-checkbox label {
+                background: url(../images/custom/checkbox.gif) no-repeat;
+            }
+            .custom-radio label {
+                background: url(../images/custom/radiobutton.gif) no-repeat;
+            }
+            .custom-checkbox label,
+            .custom-radio label {
+                background-position: -10px -18px;
+            }
+            .custom-checkbox label.hover,
+            .custom-checkbox label.focus,
+            .custom-radio label.hover,
+            .custom-radio label.focus {
+                background-position: -10px -118px;
+            }
+            .custom-checkbox label.checked,
+            .custom-radio label.checked {
+                background-position: -10px -218px;
+            }
+            .custom-checkbox label.checkedHover,
+            .custom-checkbox label.checkedFocus {
+                background-position: -10px -318px;
+            }
+            .custom-checkbox label.focus,
+            .custom-radio label.focus {
+                outline: 1px dotted #ccc;
+            }

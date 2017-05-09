@@ -1,0 +1,12 @@
+﻿.StyleView{border:1px solid #c0c0c0;font-size:12px;border-bottom:0px;border-right:0px;margin:0px;padding:0px;border-collapse:collapse;}
+.StyleView th{margin:0px;font-weight:normal;padding:5px;border:1px solid #c0c0c0;border-top:0px;border-left:0px;background-color:#EDEDED;}
+.StyleView td{margin:0px;font-weight:normal;padding:5px;border:1px solid #c0c0c0;border-top:0px;border-left:0px;line-height:16px;}
+.ContentStyleView{border:0px;}
+.StyleView .nb td{border:0px;margin:0px;padding:0px;}
+.NoBorderTableTD td{margin:0px;padding:0px;border-bottom:0px;}
+.NoBorderTableTD th{margin:0px;padding:0px;}
+.NoBorderTableTD th.StyleHead{height:35px;}
+.NoBorderTable{margin:0px;padding:0px;border:0px;}
+.NoBorderTable td{border:0px;margin:0px;padding:5px;border:1px solid #c0c0c0;border-top:0px;border-right:0px;height:35px;}
+.NoBorderTable th{border:0px;margin:0px;border-bottom:1px solid #c0c0c0;}
+.ContentStyleView td,.ContentStyleView th{border:0px;margin:0px;padding:0px;height:20px;background-color:Transparent;}

@@ -1,0 +1,4 @@
+﻿.Cut2Slice #rRightDown,.Cut2Slice #rLeftDown,.Cut2Slice #rLeftUp,.Cut2Slice #rRightUp,.Cut2Slice #rRight,.Cut2Slice #rLeft,.Cut2Slice #rUp,.Cut2Slice #rDown{position:absolute;background:#F00;width:5px; height:5px; z-index:500; font-size:0;}
+.Cut2Slice #dragDiv{border:1px solid #000000;}
+.Cut2Slice td{padding:10px;}
+.Cut2Slice img{border:0px;}

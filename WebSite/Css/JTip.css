@@ -1,0 +1,71 @@
+﻿.JT_arrow_left{
+	background-image: url(../images/JTip/arrow_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height:23px;
+}
+
+.JT_arrow_right{
+	background-image: url(../images/JTip/arrow_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height:23px;
+}
+
+.JT {
+	position: absolute;
+	z-index:90000000;
+}
+.JT_copy{
+	padding:10px 10px 10px 10px;
+	color:#333333;
+	border: 2px solid #CCCCCC;
+	background-color: #fff;
+	margin-left:11px;
+	overflow:hidden;
+}
+.JT_Right .JT_copy{
+	margin-left:0px;
+	margin-right:11px;
+}
+.JT_title
+{
+	clear:both;
+}
+
+.JT_loader{
+	background-image: url(../images/JTip/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:100%;
+	height:12px;
+}
+
+.JT_close_left{
+	background-color: #CCCCCC;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-weight:bold;
+	margin-left:11px;
+	height:13px;
+}
+
+.JT_close_right{
+	background-color: #CCCCCC;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-weight:bold;
+	margin-right:11px;
+	height:13px;
+}
+
+
+.JT .ImgMess
+{
+	color:#000;
+	font-size:12px;
+}

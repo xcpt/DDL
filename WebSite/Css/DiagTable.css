@@ -1,0 +1,42 @@
+﻿.DiagTable{border:1px solid #d1d1d1;border-collapse:collapse;background-color:#efefef;width:730px;}
+.DiagTable td{min-height:24px;border:1px solid #d3d3d3; height:35px;min-width:110px;min-width:117px!important;white-space:nowrap;overflow:hidden;}
+.DiagTable .top,.DiagTable .bottom{background-color:#e4e4e4;font-size:12px;text-align:right;color:#3a9dd2;vertical-align:bottom;}
+.DiagTable .bottom td,.DiagTable .top td{min-height:20px;background:url(../images/fieldadd.gif) no-repeat center #e4e4e4;}
+.DiagTable .right,.DiagTable .left{background:url(../images/fieldadd.gif) no-repeat center #e4e4e4;width:110px;width:117px!important;}
+.DiagTable .left{width:0px;width:0px!important;min-width:0px;overflow:hidden;font-size:0px;min-width:0px!important;}
+.DiagTable .close{width:0px;width:0px!important;min-width:0px;overflow:hidden;font-size:0px;min-width:0px!important;}
+#divDiagTable{filter: Alpha(opacity=70);-moz-opacity:.7;opacity:0.7; background-color:#6dbee7;}
+.DivDrag{margin:3px;border-left:solid 1px #88cdf2;border-top:solid 1px #88cdf2;border-bottom:solid 1px #55b1e2;border-right:solid 1px #55b1e2;background-color:#c5e5f3;width:108px;}
+.DivDrag div{padding:4px;font-size:12px;display:block;width:97px;height:16px;line-height:17px;border-left:solid 1px #fff;border-top:solid 1px #fff;border-bottom:solid 1px #c5e5f3;border-right:solid 1px #c5e5f3;color:#00558e;}
+.DivDrag div span.title{width:80px;height:16px;line-height:17px;display:block;float:left;}
+.DivDrag:hover div span.title{cursor:move;}
+.DivDrag:hover div span.lock{cursor:pointer;}
+.DivDrag:hover div span.lock img{width:16px;height:16px;}
+.DivDrag:hover{margin:3px;border-left:solid 1px #88cdf2;border-top:solid 1px #88cdf2;border-bottom:solid 1px #3a9dd2;border-right:solid 1px #3a9dd2;background-color:#87ceee;}
+.DivDrag:hover div{padding:4px;font-size:12px;display:block;width:97px;height:16px;line-height:17px;border-left:solid 1px #d9f0f9;border-top:solid 1px #d9f0f9;border-bottom:solid 1px #87ceee;border-right:solid 1px #87ceee;color:#00558e;}
+.DiagTable .top .right,.DiagTable .bottom .right,.DiagTable .top .left,.DiagTable .bottom .left{background:#e4e4e4;}
+#DiagDivArray th{font-size:14px;color:#00558e;text-align:left;}
+#DiagDivArray th span{font-size:12px;color:#666666;text-align:left;font-weight:100;padding-top:4px;display:block;}
+#DiagDivArray{width:900px;height:580px;overflow-y:auto;overflow-x:auto;position:absolute;}
+.DivDragRecycle{float:left;position:fixed;}
+#DivDragRecycle{border:1px solid #55b1e2;background:#efefef;padding:3px;width:125px;width:132px!important;min-height:50px;overflow-y:auto;overflow-x:hidden;}
+.DivDragRecycle .DivDrag{margin:3px;border-left:solid 1px #d1d1d1;border-top:solid 1px #d1d1d1;border-bottom:solid 1px #acacac;border-right:solid 1px #acacac;background-color:#e3e3e3;}
+.DivDragRecycle .DivDrag div{padding:4px;font-size:12px;display:block;width:97px;height:16px;line-height:17px;border-left:solid 1px #fff;border-top:solid 1px #fff;border-bottom:solid 1px #e3e3e3;border-right:solid 1px #e3e3e3;color:#666;}
+.DivDragRecycle .DivDrag div span.title{cursor:move;width:97px;}
+.DivDragRecycle .Recycle{font-weight:700;font-size:14px;color:#00558e;padding-bottom:6px;}
+.DivDragRecycle .Recycle span{font-size:12px;color:#666666;text-align:left;font-weight:100;padding-top:4px;display:block;}
+
+
+.ReSizetable{width:750px;border:0px;}
+
+.ReSizetable th{background-color:red;height:1px;background-repeat:no-repeat;color:white;font-size:0px;}
+
+.JColResizer{table-layout:fixed;}
+.JColResizer td, .JColResizer th{overflow:hidden;padding-left:0!important; padding-right:0!important;}
+.JCLRgrips{ height:0px; position:relative;}
+.JCLRgrip{margin-left:-5px; position:absolute; z-index:5; }
+.JCLRgrip .JColResizer{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;top:0px}
+.JCLRLastGrip{position:absolute; width:1px; }
+.JCLRgripDrag{ border-left:1px dotted black;	}
+
+.grip{width:11px;height:14px;margin-top:-3px;background-image:url('../images/grip.png');margin-left:-2px;position:relative;z-index:88;cursor:e-resize;}

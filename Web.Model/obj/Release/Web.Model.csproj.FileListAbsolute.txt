@@ -1,0 +1,5 @@
+H:\程序\门店管理\Web.Model\bin\Release\Web.Model.dll
+H:\程序\门店管理\Web.Model\bin\Release\Web.Model.pdb
+H:\程序\门店管理\Web.Model\obj\Release\Web.Model.dll
+H:\程序\门店管理\Web.Model\obj\Release\Web.Model.pdb
+H:\程序\门店管理\Web.Model\obj\Release\Web.Model.csprojResolveAssemblyReference.cache

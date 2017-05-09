@@ -1,0 +1,1280 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SyCms.Window</name>
+    </assembly>
+    <members>
+        <member name="T:SyCms.Window.AjaxFun">
+            <summary>
+            Ajax调用函数
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.AjaxFun.ReturnFunction(SyCms.Window.Model.M_AjaxFun,System.Boolean)">
+            <summary>
+            返回AjaxFun函数
+            </summary>
+            <param name="ajaxfunaction">Model对象</param>
+            <param name="IsScript">是否带Script标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.AutoPlay">
+            <summary>
+            自动执行函数前面引用方法
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.AutoPlay.AutoPlayTrue">
+            <summary>
+            判断是否继续执行的自动函数（以防止外部调用）
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.AutoPlay.WebPath">
+            <summary>
+            获得网站目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.Button">
+            <summary>
+            生成后台按钮
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.Button.CreateButton(System.String,System.String,System.String,System.String)">
+            <summary>
+            生成按钮（生成之后。是用Table美化过的功能。Name会转换为Table的ID，Table内按钮的ID为“icon_”+Name
+            </summary>
+            <param name="Name">控件的Name或Id</param>
+            <param name="Ico">控制显示的图标见“后台目录images/icon目录，文件名即可。</param>
+            <param name="Click">控件按钮上绑定的单击事件。</param>
+            <param name="Value">控件显示的文字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.Button.CreateImgButton(System.String,System.String)">
+            <summary>
+            生成上传图片的按钮
+            </summary>
+            <param name="ReturnPicUrlID">接受上传成功后返回的地址的控件ID</param>
+            <param name="Value">按钮上显示的文字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.Button.CreateCutImgButton(System.String,System.String)">
+            <summary>
+            生成裁剪图片按钮
+            </summary>
+            <param name="InputID">要裁剪图片的Input控件的ID</param>
+            <param name="Value">按钮上显示的文字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.Button.CreateFileButton(System.String,System.String)">
+            <summary>
+            生成上传非图片文件的按钮
+            </summary>
+            <param name="ReturnPicUrlID">接受上传成功后返回的地址的控件ID</param>
+            <param name="Value">按钮上显示的文字</param>
+        </member>
+        <member name="M:SyCms.Window.Button.CreateSelectFileButton(System.String,System.String)">
+            <summary>
+            生成选择文件的按钮
+            </summary>
+            <param name="ReturnPicUrlID">接受上传成功后返回的地址的控件ID</param>
+            <param name="Value">按钮上显示的文字</param>
+        </member>
+        <member name="M:SyCms.Window.Button.CreateSelectFileButton(System.Boolean,System.String,System.String)">
+            <summary>
+            生成选择文件的按钮
+            </summary>
+            <param name="TypeFunction">ReturnPicUrlID是否函数，为函数时，接受参数为Url地址，多个的时候依逗号分隔。</param>
+            <param name="ReturnPicUrlID">接受上传成功后返回的地址的控件ID</param>
+            <param name="Value">按钮上显示的文字</param>
+        </member>
+        <member name="T:SyCms.Window.CreateWindow">
+            <summary>
+            建立JS窗口
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.CreateWindow.ReturnFunction(SyCms.Window.Model.M_CreateWindow,System.Boolean)">
+            <summary>
+            返回JS窗口方法
+            </summary>
+            <param name="window">Model参数</param>
+            <param name="IsScript">是否输入script标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.CreateWindow_OtherSave">
+            <summary>
+            弹出窗口的另存为事件
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.CreateWindow_OtherSave.ReturnJS(SyCms.Window.Model.M_CreateWindow_OtherSave)">
+            <summary>
+            返回弹出窗口另存为事件JS object
+            </summary>
+            <param name="othersave">model</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.DownFile">
+            <summary>
+            输出下载文件
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.DownFile.DownFileName(System.String,System.String,System.Boolean)">
+            <summary>
+            下载文件用Response.Write输出 带script标签的
+            </summary>
+            <param name="FileName">文件地址（绝对地址）</param>
+            <param name="SaveFileName">保存的用户名</param>
+            <param name="IsScript"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.DownFile.DownFileName(System.String,System.Boolean)">
+            <summary>
+            下载文件用Response.Write输出 带script标签的
+            </summary>
+            <param name="FileName">文件地址（绝对地址）</param>
+            <param name="IsScript"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.DownFile.DownFileName(System.String)">
+            <summary>
+            下载文件用Response.Write输出 带script标签的
+            </summary>
+            <param name="FileName">文件地址（绝对地址）</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.DownFile.DownUrlFileName(System.String)">
+            <summary>
+            下载文件用Response.Write输出
+            </summary>
+            <param name="FileName">url文件地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.DownFile.DownUrlFileName(System.String,System.Boolean)">
+            <summary>
+            下载文件用Response.Write输出
+            </summary>
+            <param name="FileName">url文件地址</param>
+            <param name="IsScript"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.List.Grid.GridDel">
+            <summary>
+            关闭Grid删除功能
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.Grid.GridDel.ReturnFunction(SyCms.Window.List.Grid.Model.M_GridDel,System.Boolean)">
+            <summary>
+            返回GridDel js函数
+            </summary>
+            <param name="griddel">Model</param>
+            <param name="IsScript">是否有SCRIPT标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.List.Grid.GridModiy">
+            <summary>
+            表格修改
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.Grid.GridModiy.ReturnFunction(SyCms.Window.List.Grid.Model.M_GridModiy,System.Boolean)">
+            <summary>
+            返回GridModiy函数
+            </summary>
+            <param name="mgridmodiy">Model对象</param>
+            <param name="IsScript">是否带Script标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.List.Grid.GridProperty">
+            <summary>
+            设置Grid 某一列属性，选定
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.Grid.GridProperty.ReturnFunction(SyCms.Window.List.Grid.Model.M_GridProperty,System.Boolean)">
+            <summary>
+            返回GridProperty js函数
+            </summary>
+            <param name="gridproperty">Model</param>
+            <param name="IsScript">是否有SCRIPT标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.InputToCkeditor">
+            <summary>
+            文本框转编辑器
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.InputToCkeditor.CkeditorViewNoScript(System.String,System.String)">
+            <summary>
+            给INPUT添加编辑器功能（只返回函数。不带script标识）
+            </summary>
+            <param name="InputID">控件ID</param>
+            <param name="CkeditorObject">编辑器的参数。如{ skin: 'v2', toolbar: 'Basic或Default或Whole', height: '200',width:'100%' } v2可以用DAL.Admin.System.SiteInfo.GetEditorStyle()替换</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.InputToCkeditor.CkeditorViewNoScript(System.String,System.String,System.String)">
+            <summary>
+            给INPUT添加编辑器功能（只返回函数。不带script标识）
+            </summary>
+            <param name="InputID">控件ID</param>
+            <param name="CkeditorObject">编辑器的参数。如{ skin: 'v2', toolbar: 'Basic或Default或Whole', height: '200',width:'100%' } v2可以用DAL.Admin.System.SiteInfo.GetEditorStyle()替换</param>
+            <param name="PageViewList">内容分页导航显示的DIV ID名</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.InputToCkeditor.CkeditorView(System.String,System.String)">
+            <summary>
+            给INPUT添加编辑器功能（带了标识INPUT控制件是编辑器的控件隐藏ID）
+            </summary>
+            <param name="InputID">控件ID</param>
+            <param name="CkeditorObject">编辑器的参数。如{ skin: 'v2', toolbar: 'Basic或Default或Whole', height: '200',width:'100%' } v2可以用DAL.Admin.System.SiteInfo.GetEditorStyle()替换</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.InputToCkeditor.CkeditorView(System.String,System.String,System.String)">
+            <summary>
+            给INPUT添加编辑器功能（带了标识INPUT控制件是编辑器的控件隐藏ID）
+            </summary>
+            <param name="InputID">控件ID</param>
+            <param name="CkeditorObject">编辑器的参数。如{ skin: 'v2', toolbar: 'Basic或Default或Whole', height: '200',width:'100%' } v2可以用DAL.Admin.System.SiteInfo.GetEditorStyle()替换</param>
+            <param name="PageViewList">内容分页导航显示的DIV ID名</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.List.Grid.GridReload">
+            <summary>
+            添加删除修改等操作。要重新刷新表格列表
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.Grid.GridReload.flexReload(System.String,System.String,System.Boolean)">
+            <summary>
+            刷新表格，返回JS函数。用Response.Write输入
+            </summary>
+            <param name="GridID">表格的ID</param>
+            <param name="ID">传入ID时。即标识当前记录</param>
+            <param name="IsScript">是否包含script标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.Grid.GridReload.flexReload(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            刷新表格，返回JS函数。用Response.Write输入
+            </summary>
+            <param name="GridID">表格的ID</param>
+            <param name="ID">传入ID时。即标识当前记录</param>
+            <param name="Page"></param>
+            <param name="IsScript">是否包含script标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.Grid.GridReload.flexReload(System.String,System.Boolean)">
+            <summary>
+            刷新表格，返回JS函数。用Response.Write输入
+            </summary>
+            <param name="GridID">表格的ID</param>
+            <param name="IsScript">是否包含script标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.List.ListGrid">
+            <summary>
+            列表页表格显示区
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.#ctor">
+            <summary>
+            初始化列表页项
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.#ctor(System.String)">
+            <summary>
+            初始化列表页项（自己传入表格ID名称）
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.GetList">
+            <summary>
+            生成列表页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.ReadString(Base.Conn.Json.ColumnsType,System.String,System.Object[])">
+            <summary>
+            读取
+            </summary>
+            <param name="Column"></param>
+            <param name="PageSize"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.View_ColumnOperateList(SyCms.Window.List.Model.GridHeader,System.Boolean)">
+            <summary>
+            返回显示
+            </summary>
+            <param name="col"></param>
+            <param name="IsAllCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.View_ColumnOperateModi(SyCms.Window.List.Model.GridHeader,System.Boolean)">
+            <summary>
+            修改
+            </summary>
+            <param name="col"></param>
+            <param name="IsAllCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.View_ColumnOperateDel(SyCms.Window.List.Model.GridHeader,System.Boolean)">
+            <summary>
+            删除
+            </summary>
+            <param name="col"></param>
+            <param name="IsAllCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.View_ColumnOperateView(SyCms.Window.List.Model.GridHeader,System.Boolean)">
+            <summary>
+            显示详情
+            </summary>
+            <param name="col"></param>
+            <param name="IsAllCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.GetIsReadData">
+            <summary>
+            判断表格是否开始读取数据了
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.GetList(Base.Conn.Json.ColumnsType,System.Object[])">
+            <summary>
+            生成列表页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.GetNavigation(SyCms.Window.List.Model.Navigation)">
+            <summary>
+            建立导航信息
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.GetButton(System.String)">
+            <summary>
+            生成按钮功能区
+            </summary>
+            <param name="Html">按钮代码,通过Button和ajaxfun,CreateWindow,GridDel,GridModiy,GridPorperty方法获得事件添加按钮</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.GetSearch(SyCms.Window.List.Model.RibbonSearch,System.String,System.String)">
+            <summary>
+            生成搜索功能区
+            </summary>
+            <param name="Search">搜索Model</param>
+            <param name="Html">Html代码</param>
+            <param name="GridID">表格ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.List.ListGrid.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.ListGrid.IsPostBack">
+            <summary>
+            获取是否再次提交加载
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.ListGrid.GetGridID">
+            <summary>
+            返回表格ID
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.ListGrid.Search">
+            <summary>
+            设置搜索项，可以为null
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.ListGrid.Html">
+            <summary>
+            按钮代码,通过Button和ajaxfun,CreateWindow,GridDel,GridModiy,GridPorperty方法获得事件添加按钮
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.ListGrid._Grid">
+            <summary>
+            表格属性（必须填写项）
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.ListGrid._Navi">
+            <summary>
+            导航信息。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.ListGrid.GridHeadJsFunctionCode">
+            <summary>
+            其它的表头要用到的JS代码
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Model.Grid">
+            <summary>
+            显示列表表格
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid._Url">
+            <summary>
+            *列表页地址，自动在后面加上action=grid。即异步调入表格数据
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid._ColModel">
+            <summary>
+            *表头
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.GetPage">
+            <summary>
+            获得第几页
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.SetPageNum">
+            <summary>
+            根据表的主键，取得分页，传入的值必须是主键名字取得。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.ShowCheckBox">
+            <summary>
+            是否显示列表显示复选框
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.ShowToggleBtn">
+            <summary>
+            是否显示关闭列功能
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.IsSetupAutoWidth">
+            <summary>
+            显示自动调整列
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.SortName">
+            <summary>
+            表头没有开启sortable是此项不需要设置
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.SortOrder">
+            <summary>
+            排序方式是否倒序排列
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.UsePager">
+            <summary>
+            是否有分页
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.Width">
+            <summary>
+            设置宽高（如果在右边显示不需要设置）
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.Height">
+            <summary>
+            设置宽高（如果在右边显示不需要设置）
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.PageSize">
+            <summary>
+            分页数量。默认15，可能调用系统设置的分页数量代码DAL.Admin.System.SiteInfo site = new DAL.Admin.System.SiteInfo().GetInfo();PageSize = site.PageSize;
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.Table_SqlStr">
+            <summary>
+            数据库连接标识字符串
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid._Table_TableName">
+            <summary>
+            *要调用显示的数据表
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid._Table_Filter">
+            <summary>
+            *调用显示数据表的条件，不需要加where
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid._Table_OrderBy">
+            <summary>
+            排序条件。order by 开始
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid._Table_Index">
+            <summary>
+            主键。用于分页，无主键时，就是查询所有
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid._Table_Field">
+            <summary>
+            *显示的表字段
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Grid.WinDrag">
+            <summary>
+            列表窗口是否可移动
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Model.GridHeader">
+            <summary>
+            表头
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader._Display">
+            <summary>
+            标头文字
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader._Name">
+            <summary>
+            字段名称
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader._Width">
+            <summary>
+            表头宽度
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.MinWidth">
+            <summary>
+            如果设置了此值。将是自动减宽度之后的宽，并且最小值保证，只能存在一个。其它无效
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.NoSize">
+            <summary>
+            是否不能调整宽度
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.IsAutoSize">
+            <summary>
+            设置是否自动调整宽度列（只能有一列，多限制远效）
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.Sortable">
+            <summary>
+            标头是否可以单击排序
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.Align">
+            <summary>
+            对齐关系,默认左对齐，left,center,right
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.Field">
+            <summary>
+            字段的ID值，用于保存使用
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.Hide">
+            <summary>
+            是否隐藏，隐藏无法显示
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.Close">
+            <summary>
+            设置此列是否可关闭
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.Show">
+            <summary>
+            显示列否，关闭可选择出
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.Process">
+            <summary>
+            显示之前执行的函数，使用return返回显示结果，只填写函数名即可，在函数里使用下面ShowTrueOrFalse函数。对错效果ShowTrueOrFalse(value,"")是能够单击。ShowTrueOrFalse(value,"1")是不可能单击灰色
+            参数1：就是显示的值；
+            参数2：就是第一个表头键的值，所以第一表头最好设置成ID；
+            参数3：为这一行的值，可能通过，参数.cell[表头顺序]得到值；
+            参数4：为当前列的顺序号
+            参数5：为当前列的字段名称即为Name设置的值
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperate">
+            <summary>
+            列属性1为单击进入另一个列表，2为单击修改属性，3为单击进入修改界面，4为单击进入删除,5为列表显示顺序号。ID为orderid,6为单击打开一个显示详情的窗口。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateListUrl">
+            <summary>
+            列属性1列表的地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateListName">
+            <summary>
+            显示的列表的名字。为空时使用当前列名，多项时使用“列表”
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateListWinWidth">
+            <summary>
+            打开窗口的大小（无时就是替换当前列表，存在值时是打开窗口）
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateListWinHeight">
+            <summary>
+            打开窗口的大小（无时就是替换当前列表，存在值时是打开窗口）
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateListUrlMessage">
+            <summary>
+            列属性1列表页提示
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateUrl">
+            <summary>
+            列属性2时，此地址为空时。显示对叉，但不能修改。属性修改界面，返回0，1即可。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateMessage">
+            <summary>
+            列属性2时，单击的时候提示语言
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateModiUrl">
+            <summary>
+            属性为3时修改的地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateModiSaveUrl">
+            <summary>
+            属性为3时修改的保存
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateModiMessage">
+            <summary>
+            列属性3时，单击的时候提示语言
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateModiIDName">
+            <summary>
+            属性为3时，修改显示的信息必须有一个ID的容包着，这样提交表格的时候。才会提交此ID下的值给接收页面
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateModiWinWidth">
+            <summary>
+            属性为3时修改界面的宽
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateModiWinHeight">
+            <summary>
+            属性为3时修改界面的高度
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateDelUrl">
+            <summary>
+            属性为4时删除的地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateUrlMessage">
+            <summary>
+            列属性4时，单击的时候提示语言
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateViewUrl">
+            <summary>
+            属性为6时显示的地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateViewMessage">
+            <summary>
+            列属性6时，单击的时候提示语言
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateViewWinWidth">
+            <summary>
+            属性为6时修改界面的宽
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.GridHeader.ColumnOperateViewWinHeight">
+            <summary>
+            属性为6时修改界面的高度
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Model.Navigation">
+            <summary>
+            导航Model
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Navigation._NavigationName">
+            <summary>
+            *导航显示的名字
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.Navigation.NavigationTab">
+            <summary>
+            导航右边的Tab切换功能按钮。
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Model.NavigationTab">
+            <summary>
+            Tab A model
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.NavigationTab._Name">
+            <summary>
+            连接名字
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.NavigationTab._Url">
+            <summary>
+            要打开的地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.NavigationTab._Action">
+            <summary>
+            传递的参数
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.NavigationTab._Message">
+            <summary>
+            加载等级语言，默认为图标loading加载
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.NavigationTab._IsSelect">
+            <summary>
+            是否当前选定
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Model.RibbonSearch">
+            <summary>
+            功能按钮区导航
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.RibbonSearch._Html">
+            <summary>
+            要搜索的信息html代码。如标题:<input type="text" />
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.RibbonSearch.OtherButton">
+            <summary>
+            其它按钮
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.RibbonSearch.OtherButtonHtml">
+            <summary>
+            其它的在搜索按钮后面的信息
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Model.RibbonSearch_OtherButton">
+            <summary>
+            搜索后面的其它按钮，也是读取搜索条件。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.RibbonSearch_OtherButton._Url">
+            <summary>
+            执行的地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.RibbonSearch_OtherButton._Icon">
+            <summary>
+            控制显示的图标见“后台目录images/icon目录，文件名即可。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.RibbonSearch_OtherButton._Name">
+            <summary>
+            按钮的名字
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Model.RibbonSearch_OtherButton._Message">
+            <summary>
+            执行提示信息
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.Merger">
+            <summary>
+            合并
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.Merger.Null(System.String,System.Boolean)">
+            <summary>
+            合并JS后面的null,参数
+            </summary>
+            <param name="returnstr">要合并的JS字符串</param>
+            <param name="IsScript">返回是否有SCRIPT标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.Model.M_AjaxFun">
+            <summary>
+            AjaxFun菜单，请给字符串自行添加引号标识
+            </summary>
+        </member>
+        <member name="F:SyCms.Window.Model.M_AjaxFun.data">
+            <summary>
+            ReadInputValue(FormName)
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun._Url">
+            <summary>
+            要执行的URL地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.Data">
+            <summary>
+            要传递的数据普通字符串、变量（开始不为.#，并且不带=号）和jquer字符串格式（为jquery字符串格式时。如.样式名或#ID名，即读取所有这里面的控件值）
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.Content">
+            <summary>
+            执行时提示文字信息。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun._Function">
+            <summary>
+            返回信息显示的容器(如引导显示在右边，请输入'right'。jquery字符串格式)或者是一个JS函数，JS函数接参数有：返回的HTML代码（HTML代码方式见NoScript)和Window参数
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.ParentNode">
+            <summary>
+            参数Content弹出提示时显示居中的容器(jquery字符串格式)
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.Window">
+            <summary>
+            其它的打开的js窗口变量名称
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.ErrorFunction">
+            <summary>
+            执行错误时执行的函数
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.Alert_X">
+            <summary>
+            弹出窗口的X坐标，数值
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.Alert_Y">
+            <summary>
+            弹出窗口的Y坐标，数值
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.NoScript">
+            <summary>
+            当Function为JS函数时，接收HTML是否带JS标识，默认是返回不带JS的HTML。JS直接执行。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_AjaxFun.NoError">
+            <summary>
+            是否显示错误提示。
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.Model.M_CreateWindow">
+            <summary>
+            建立JS弹出窗口
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow._Url">
+            <summary>
+            要建立窗口打开的URL地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow._Title">
+            <summary>
+            窗口标题文字
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow._ReturnUrl">
+            <summary>
+            确定的时候单击的执行的地址（返回FormName里所有表单的值）或者是执行的函数（接收对象有【当前JS窗口变量{关闭为对象.close();}, FormName为参数｛ReadInputValue(FormName)获取控制件值｝, ParentName为参数, PostReturnFunction为参数】）
+            格式：默认为执行的地址，如前面加F:开始为执行的JS函数
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow._W">
+            <summary>
+            设置窗口打开的宽度，格式为数字，如为“'10'”时全屏。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow._H">
+            <summary>
+            设置窗口打开的高度，格式为数字，如为“'10'”时全屏。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow._FormName">
+            <summary>
+            对象的ID值（即要取的控制件值包着的DIV或者是FORM的ID值
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.OtherSave">
+            <summary>
+            添加另存为按钮事件。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.ParentName">
+            <summary>
+            弹出窗口时显示居中的容器(jquery字符串格式)
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.MessageTitle">
+            <summary>
+            窗口里显示的标题信息。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.Message">
+            <summary>
+            窗口里显示的信息
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.ShowFunction">
+            <summary>
+            JS窗口打开之后执行的JS函数,参数有当前CreateWindowdiag打开的窗口JS变量
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.PostReturnFunction">
+            <summary>
+            提交之后执行的JS函数 参数(html, Windowdiag)
+            html为执行地址返回的html代码。执行地址为函数时即函数会同时传给函数
+            Windowdiag为建立的JS窗口地址.关闭为Windowdiag.close();
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.HtmlFunction">
+            <summary>
+            对打开一个地址显示出来的HTML是否要处理。如果处理的时候。定义此函数，参数为html，必须有返回值。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.HtmlCon">
+            <summary>
+            如果URL地址为空时，可以设置此项为要显示的html代码。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.PostFunction">
+            <summary>
+            执行提交之前执行的JS函数，返回真假。接受参数是FormName;
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow.Drag">
+            <summary>
+            建立的JS窗口是否可移动
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.Model.M_CreateWindow_OtherSave">
+            <summary>
+            建立窗口的另存为按钮。
+            </summary>
+        </member>
+        <member name="F:SyCms.Window.Model.M_CreateWindow_OtherSave.name">
+            {Name:'名称',Url:'地址',Function:函数,FormName:名称,PostReturnFunction:函数}
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow_OtherSave._Name">
+            <summary>
+            按钮的名字
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow_OtherSave._Url">
+            <summary>
+            确定的时候单击的执行的地址（返回FormName里所有表单的值）或者是执行的函数（接收对象有【当前JS窗口变量{关闭为对象.close();}, FormName为参数｛ReadInputValue(FormName)获取控制件值｝, ParentName为参数, PostReturnFunction为参数｛自己为空时使用上级CreateWindow.PostReturnFunction｝】）
+            格式：默认为执行的地址，如前面加F:开始为执行的JS函数
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow_OtherSave.Function">
+            <summary>
+            为提交执行前可以执行的函数，参数有：当前JS窗口变量（关闭为变量.close();）, FormName为主参数，返回真假。因为是否继续
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow_OtherSave.FormName">
+            <summary>
+            Form的ID，有此参数可以重置表单控件值。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.Model.M_CreateWindow_OtherSave.PostReturnFunction">
+            <summary>
+            提交完成后执行的函数，如主PostReturnFunction不空，此为空时即执行主CreateWindow.PostReturnFunction，参数见CreateWindow.PostReturnFunction
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Grid.Model.M_GridDel">
+            <summary>
+            关连表格Grid删除
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridDel._gridList">
+            <summary>
+            字符串，或者是gridList的ID
+            依#打头的为gridList的ID。
+            传入的参数为ID等于字符串或者是ID等于取gridlist选择的值。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridDel._Url">
+            <summary>
+            要接受处理的URL地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridDel.ParentName">
+            <summary>
+            弹出提示时显示居中的容器(jquery字符串格式)
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridDel.ClassID">
+            <summary>
+            为空时。删除成功刷新#flex1表格对象，不为空时，删除成功刷新#flex+ClassID表格对象。
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Grid.Model.M_GridModiy">
+            <summary>
+            打开Grid某一行数据的修改窗口
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy._gridList">
+            <summary>
+            字符串，或者是gridList的ID
+            依#打头的为gridList的ID。
+            传入的参数为ID等于字符串或者是ID等于取gridlist选择的值。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy._Url">
+            <summary>
+            为打开JS窗口读取地址的返回内容。
+            如果为函数时后面的参数都无效，参数为选定的值或者是gridlist传递的字符串。
+            函数为F:开关
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy._Title">
+            <summary>
+            窗口打开显示的标题
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy._ReturnUrl">
+            <summary>
+            确定的时候单击的执行的地址（返回FormName里所有表单的值）或者是执行的函数（接收对象有【当前JS窗口变量{关闭为对象.close();}, FormName为参数｛ReadInputValue(FormName)获取控制件值｝, ParentName为参数, PostReturnFunction为参数】）
+            格式：默认为执行的地址，如前面加F:开始为执行的JS函数
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy._W">
+            <summary>
+            设置窗口打开的宽度，格式为数字，如为“'10'”时全屏。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy._H">
+            <summary>
+            设置窗口打开的高度，格式为数字，如为“'10'”时全屏。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy._FormName">
+            <summary>
+            对象的ID值（即要取的控制件值包着的DIV或者是FORM的ID值
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.OtherSave">
+            <summary>
+            添加另存为按钮事件。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.Diag">
+            <summary>
+            是否可移动
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.ParentName">
+            <summary>
+            弹出窗口时显示居中的容器(jquery字符串格式)
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.MessageTitle">
+            <summary>
+            窗口里显示的标题信息。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.Message">
+            <summary>
+            窗口里显示的信息
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.ShowFunction">
+            <summary>
+             JS窗口打开之后执行的JS函数，参数有当前打开的窗口JS变量CreateWindowdiag
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.PostReturnFunction">
+            <summary>
+            提交之后执行的JS函数 参数(html, Windowdiag)
+            html为执行地址返回的html代码。执行地址为函数时即函数会同时传给函数
+            Windowdiag为建立的JS窗口地址.关闭为Windowdiag.close();
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.SelectEd">
+            <summary>
+            gridList的ID表格取选定的值时，是否提示没有选定，默认为弹出
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.PostFunction">
+            <summary>
+            执行提交的时候的函数。返回真和假
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridModiy.CancelEvent">
+            <summary>
+            取消之后执行的函数
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.List.Grid.Model.M_GridProperty">
+            <summary>
+            表格某行 属性设置，打开关闭选定属性之类的
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridProperty._gridList">
+            <summary>
+            字符串，或者是gridList的ID
+            依#打头的为gridList的ID。
+            传入的参数为ID等于字符串或者是ID等于取gridlist选择的值。
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridProperty._Url">
+            <summary>
+            要接受处理的URL地址
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridProperty.ParentName">
+            <summary>
+            弹出提示时显示居中的容器(jquery字符串格式)
+            </summary>
+        </member>
+        <member name="P:SyCms.Window.List.Grid.Model.M_GridProperty.ClassID">
+            <summary>
+            为空时。删除成功刷新#flex1表格对象，不为空时，删除成功刷新#flex+ClassID表格对象。
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.Model.M_TabMenu">
+            <summary>
+            Tab菜单
+            </summary>
+        </member>
+        <member name="T:SyCms.Window.PageNum">
+            <summary>
+            获得第几页
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.PageNum.GetPage(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取第几页
+            </summary>
+            <param name="IDName">主键ID名字</param>
+            <param name="IDValue">ID的值</param>
+            <param name="PageOrder">排序条件</param>
+            <param name="TableName">表名称</param>
+            <param name="TableWhere">表条件</param>
+            <param name="pagesize">每页数量</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.PassWord">
+            <summary>
+            加密解密方法
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.PassWord.Encrypt(System.String)">
+            <summary>
+            加密字符串
+            </summary>
+            <param name="Input">要加密的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.PassWord.Decrypt(System.String)">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="Input">要解密的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.PlusPath">
+            <summary>
+            获得插件目录
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.PlusPath.GetPlusPath">
+            <summary>
+            返回插件的目录。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.PlusPath.HttpGetPlusPath">
+            <summary>
+            返回插件的目录。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.PlusPath.GetPlusPath(System.Int32)">
+            <summary>
+            返回插件的目录。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.PlusPath.HttpGetPlusPath(System.Int32)">
+            <summary>
+            返回插件的目录。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.ReadInputValue">
+            <summary>
+            读取一个ID里面所有的控件的值。连接成字符串&amp;=
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.ReadInputValue.ReadInputValueString(System.String)">
+            <summary>
+            读取一个ID里面所有的控件的值。连接成字符串&amp;=，注：不读取按钮和文件控件
+            如果是编辑器控件，给隐藏的文本框添加一个同名后加“___Config”的控件。
+            </summary>
+            <param name="FromName">一个jquery的字符串格式#.开头，为空读取网页所有。</param>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.TextArea">
+            <summary>
+            给文本框添加右键上传图片选择图片的功能
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.TextArea.GetTextAreaFun(System.String)">
+            <summary>
+            返回JS方法无script
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SyCms.Window.WindowsReturn">
+            <summary>
+            返回的提示信息（无Response.End()）
+            </summary>
+        </member>
+        <member name="M:SyCms.Window.WindowsReturn.WindowsReturnAlert">
+            <summary>
+            要求登录，弹出登录窗口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.WindowsReturn.WindowsReturnAlert(System.Boolean,System.String)">
+            <summary>
+            提示信息（自动关闭）
+            </summary>
+            <param name="Ok">正确信息或错误提示</param>
+            <param name="AlertMessage">提示信息文字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.WindowsReturn.WindowsReturnAlert(System.String,System.String)">
+            <summary>
+            错误提示信息（自动关闭）
+            </summary>
+            <param name="AlertMessage">提示信息文字</param>
+            <param name="InputID">提示之后获得焦点的控件ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.WindowsReturn.WindowsReturnAlert(System.String)">
+            <summary>
+            错误提示信息（自动关闭）
+            </summary>
+            <param name="AlertMessage">提示信息文字</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.WindowsReturn.WindowsReturnAlert(System.Boolean,System.String,System.Boolean)">
+            <summary>
+            提示信息
+            </summary>
+            <param name="Ok">正确信息或错误提示</param>
+            <param name="AlertMessage">提示信息文字</param>
+            <param name="NoClose">不自动关闭</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.WindowsReturn.WindowsReturnAlert(System.Boolean,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            提示信息
+            </summary>
+            <param name="Ok">正确信息或错误提示</param>
+            <param name="AlertMessage">提示信息文字</param>
+            <param name="NoClose">不自动关闭</param>
+            <param name="IsBubble">是否右下角冒泡提示</param>
+            <returns></returns>
+        </member>
+        <member name="M:SyCms.Window.WindowsReturn.WindowsReturnRun(System.String,System.Int32)">
+            <summary>
+            运行脚本提示信息
+            </summary>
+            <param name="AlertMessage">JS代码</param>
+            <param name="RunTime">0为立即选择，毫秒</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,42 @@
+﻿.b-m-mpanel {
+	Z-INDEX: 99997; BORDER: #718bb7 1px solid; POSITION: absolute; PADDING: 2px 0px;BACKGROUND: url(../images/contextmenu/menu_bg.gif) #f0f0f0 repeat-y left 50%;TOP: 0px;LEFT: 0px
+}
+.b-m-split {
+	MARGIN: 0px 2px; BACKGROUND: url(../images/contextmenu/m_splitLine.gif) repeat-x center 50%; HEIGHT: 6px; FONT-SIZE: 0px
+}
+.b-m-item {
+	PADDING:4px 2px; LINE-HEIGHT: 100%; MARGIN: 0px 2px 0px 3px;CURSOR: normal;
+}
+.b-m-idisable {
+	PADDING:4px 2px; LINE-HEIGHT: 100%; MARGIN: 0px 2px 0px 3px;CURSOR: normal;
+}
+.b-m-idisable {
+	COLOR: #808080
+}
+.b-m-ibody {
+	TEXT-OVERFLOW: ellipsis; OVERFLOW: hidden
+}
+.b-m-arrow {
+	TEXT-OVERFLOW: ellipsis; OVERFLOW: hidden
+}
+.b-m-arrow {
+	BACKGROUND: url(../images/contextmenu/m_arrow.gif) no-repeat right 50%
+}
+.b-m-idisable .b-m-arrow {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.b-m-item IMG {
+	MARGIN-RIGHT: 8px
+}
+.b-m-ifocus IMG {
+	MARGIN-RIGHT: 8px
+}
+.b-m-idisable IMG {
+	MARGIN-RIGHT: 8px
+}
+.b-m-ifocus {
+	BORDER: #aaccf6 1px solid; PADDING:3px 1px; LINE-HEIGHT: 100%; MARGIN: 0px 2px 0px 3px; BACKGROUND: url(../images/contextmenu/m_item.gif) repeat-x 50% bottom; CURSOR: normal;
+}
+.b-m-idisable IMG {
+	VISIBILITY: hidden
+}

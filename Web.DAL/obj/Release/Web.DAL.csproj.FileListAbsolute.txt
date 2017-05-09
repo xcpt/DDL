@@ -1,0 +1,14 @@
+H:\程序\门店管理\Web.DAL\bin\Release\Web.DAL.dll
+H:\程序\门店管理\Web.DAL\bin\Release\Base.dll
+H:\程序\门店管理\Web.DAL\bin\Release\Web.Model.dll
+H:\程序\门店管理\Web.DAL\bin\Release\ICSharpCode.SharpZipLib.dll
+H:\程序\门店管理\Web.DAL\bin\Release\Interop.ADOX.dll
+H:\程序\门店管理\Web.DAL\bin\Release\Interop.ADODB.dll
+H:\程序\门店管理\Web.DAL\bin\Release\Newtonsoft.Json.Net20.dll
+H:\程序\门店管理\Web.DAL\bin\Release\NPOI.dll
+H:\程序\门店管理\Web.DAL\bin\Release\WordPlugin.dll
+H:\程序\门店管理\Web.DAL\bin\Release\Base.xml
+H:\程序\门店管理\Web.DAL\bin\Release\Web.Model.pdb
+H:\程序\门店管理\Web.DAL\bin\Release\NPOI.xml
+H:\程序\门店管理\Web.DAL\obj\Release\Web.DAL.csprojResolveAssemblyReference.cache
+H:\程序\门店管理\Web.DAL\obj\Release\Web.DAL.dll

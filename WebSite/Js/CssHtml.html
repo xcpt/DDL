@@ -1,0 +1,1173 @@
+﻿<table border="0" width="676" cellspacing="0" cellpadding="0" height="278" class="yq_style">
+	<tr>
+		<td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0" height="354">
+			<tr>
+				<td height="336">
+				<table border="0" width="100%" cellpadding="2" height="331">
+					<tr>
+						<td height="297" width="120">
+						<table border="0" width="100%">
+							<tr>
+								<td height="18">&nbsp;分类</td>
+							</tr>
+							<tr>
+								<td height=250>
+								<select size="11" style="width:122px;height:268px" id="yq_list_style" name="yq_list_style" onChange="select(this.options[this.selectedIndex].value,this);">
+								<option selected value="1">类型</option>
+								<option value="2">背景</option>
+								<option value="3">区块</option>
+								<option value="4">方框</option>
+								<option value="5">边框</option>
+								<option value="6">列表</option>
+								<option value="7">定位</option>
+								<option value="8">扩展</option>
+								<option value="9">滚动条</option>
+								<option value="10">其它</option>
+								</select></td>
+							</tr>
+						</table>
+						</td>
+						<td height="297">
+						<table border="0" width="100%" height="291" cellspacing="0">
+							<tr>
+								<td height="35"><div id="csslistview">&nbsp;类型</div><hr></td>
+							</tr>
+							<tr>
+								<td valign=top>
+								<table border="0" width="100%" cellpadding="0" height="240" id="yq_selectid_1" name="yq_selectid_1" style="display:block;">
+									<tr>
+										<td align="right" width="8%">字体:</td>
+										<td colspan="3"><div style="position: relative;">
+										<select size="1" name="font-family-y" id="font-family-y" style="width:310px;" onChange="replacetext('font-family',this);">
+										<option value=""></option>
+										<option value="&quot;宋体&quot;">"宋体"</option>
+										<option value="&quot;新宋体&quot;">"新宋体"</option>
+										<option value="Arial, Helvetica, sans-serif">"Arial, Helvetica, sans-serif"</option>
+										<option value="&quot;Times New Roman&quot;, Times, serif">"Times New Roman", Times, serif</option>
+										<option value="&quot;Courier New&quot;, Courier, monospace">"Courier New", Courier, monospace</option>
+										<option value="Georgia, &quot;Times New Roman&quot;, Times, serif">Georgia, "Times New Roman", Times, serif</option>
+										<option value="Verdana, Arial, Helvetica, sans-serif">Verdana, Arial, Helvetica, sans-serif</option>
+										<option value="Geneva, Arial, Helvetica, sans-serif">Geneva, Arial, Helvetica, sans-serif</option>
+										</select><input type="text" name="font-family" onChange="change('font-family-y');" id="font-family" size="20" style="width:291px;height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div></td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">大小:</td>
+										<td width="40%"><div style="position: relative;float:left;"><select size="1" class="select1" name="font-size-y" id="font-size-y" onChange="replacetext('font-size',this);">
+										<option value=""></option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="12">12</option>
+										<option value="14">14</option>
+										<option value="16">16</option>
+										<option value="18">18</option>
+										<option value="24">24</option>
+										<option value="36">36</option>
+										<option value="xx-small">极小</option>
+										<option value="x-small">特小</option>
+										<option value="small">小</option>
+										<option value="medium">中</option>
+										<option value="large">大</option>
+										<option value="x-large">特大</option>
+										<option value="xx-large">极大</option>
+										<option value="smaller">较小</option>
+										<option value="larger">较大</option>
+										</select><input type="text" name="font-size" id="font-size" onChange="change('font-size-y');" onPropertyChange="dwdisabled('font-size');" oninput="dwdisabled('font-size');" class="input1" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="font-size-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										</select></div></td>
+										<td align="right" width="13%">粗细:</td>
+										<td width="36%"><div style="position: relative;"><select size="1" name="font-weight-y" id="font-weight-y" onChange="replacetext('font-weight',this);">
+										<option value=""></option>
+										<option value="normal">正常</option>
+										<option value="bold">粗体</option>
+										<option value="bolder">特粗</option>
+										<option value="lighter">细体</option>
+										<option value="100">100</option>
+										<option value="200">200</option>
+										<option value="300">300</option>
+										<option value="400">400</option>
+										<option value="500">500</option>
+										<option value="600">600</option>
+										<option value="700">700</option>
+										<option value="800">800</option>
+										<option value="900">900</option>
+										</select><input type="text" name="font-weight" id="font-weight" onChange="change('font-weight-y');" style="position: absolute;top:1px;left:1px;z-index:1;"></div></td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">样式:</td>
+										<td width="40%"><select size="1" class="select1" name="font-style" id="font-style">
+										<option value=""></option>
+										<option value="normal">正常</option>
+										<option value="italic">斜体</option>
+										<option value="oblique">偏斜体</option>
+										</select></td>
+										<td align="right" width="13%">变体:</td>
+										<td width="36%"><select size="1" name="font-variant" id="font-variant">
+										<option value=""></option>
+										<option value="normal">正常</option>
+										<option value="small-caps">小型大写字母
+										</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">行高:</td>
+										<td width="40%"><div style="position: relative;float:left;"><select size="1" name="line-height-y" id="line-height-y" class=select1 onChange="replacetext('line-height',this);">
+										<option value=""></option>
+										<option value="normal">正常</option>
+										<option value="yq">(值)</option>
+										</select><input type="text" name="line-height" id="line-height" onChange="change('line-height-y');" onPropertyChange="dwdisabled('line-height');" oninput="dwdisabled('line-height');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="line-height-dw" id="line-height-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										<option value="">倍行高</option>
+										</select></div></td>
+										<td align="right" width="13%">大小写:</td>
+										<td width="36%"><select size="1" name="text-transform" id="text-transform">
+										<option value=""></option>
+										<option value="capitalize">首字母大写</option>
+										<option value="uppercase">大写</option>
+										<option value="lowercase">小写</option>
+										<option value="none">无</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">修饰:</td>
+										<td width="40%">
+										<input type="checkbox" class="input2"  name="text-decoration" id="text-decoration" onClick="selectinput('text-decoration',0,this.checked)" value="underline">下划线</td>
+										<td align="right" width="13%">颜色:</td>
+										<td width="36%"><div id="color-view" style="float:left;"><img style="cursor:pointer;" onClick="DisplayClrDlg('color-view');" src="images/bg.gif" width=18 height=17></div><div style="float:left;"><input type="text" onPropertyChange="changecolor('color')" oninput="changecolor('color')" name="color" id="color" size="10"></div></td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">　</td>
+										<td colspan="3">
+										<input type="checkbox" class="input2" name="text-decoration" id="text-decoration" onClick="selectinput('text-decoration',0,this.checked)" value="overline">上划线</td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">　</td>
+										<td colspan="3">
+										<input type="checkbox" class="input2" name="text-decoration" id="text-decoration" onClick="selectinput('text-decoration',0,this.checked)" value="line-through">删除线</td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">　</td>
+										<td colspan="3">
+										<input type="checkbox" class="input2" name="text-decoration" id="text-decoration" onClick="selectinput('text-decoration',0,this.checked)" value="blink">闪烁</td>
+									</tr>
+									<tr>
+										<td align="right" width="8%">　</td>
+										<td colspan="3">
+										<input type="checkbox" class="input2" name="text-decoration" id="text-decoration" onClick="selectinput('text-decoration',1,this.checked)" value="none">无</td>
+									</tr>
+								</table>
+ 
+ 
+								<table border="0" width="100%" cellpadding="0" height="174" id="yq_selectid_2" name="yq_selectid_2" style="display:none;">
+									<tr>
+										<td align="right">背景颜色:</td>
+										<td><div id="background-color-view" style="float:left;"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('background-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="background-color" id="background-color" onPropertyChange="changecolor('background-color');" oninput=="changecolor('background-color');" size="20"></div></td>
+									</tr>
+									<tr>
+										<td align="right">背景图像:</td>
+										<td><div style="float:left;"><input type="text" name="background-image" id="background-image" size="50" style="width:200px;"></div><div style="float:left;padding-left:2px;"><input type="button" value="上传图片" onclick="UploadFile('background-image', 'PIC', 'IsStyle=1&Listid=$YqListid$');" icon="icon-picture_add" /><input type="button" value="选择图片" onclick="DirImgWin($id('background-image'),$YqListid$,'IsStyle=1');" icon="icon-pictures" ></div></td>
+									</tr>
+									<tr>
+										<td align="right">重复:</td>
+										<td>
+										<select size="1" name="background-repeat" id="background-repeat">
+											<option value=""></option>
+											<option value="no-repeat">不重复</option>
+											<option value="repeat">重复</option>
+											<option value="repeat-x">横向重复</option>
+											<option value="repeat-y">纵向重复</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right">附件:</td>
+										<td>
+										<select size="1" name="background-attachment" id="background-attachment">
+											<option value=""></option>
+											<option value="fixed">固定</option>
+											<option value="scroll">滚动</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right">水平位置:</td>
+										<td><div style="position: relative;float:left;">
+										<select size="1" name="background-position(1)-y" id="background-position(1)-y" onChange="replacetext('background-position(1)',this);">
+											<option value=""></option>
+											<option value="left">左对齐</option>
+											<option value="center">居中</option>
+											<option value="right">右对齐</option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="background-position(1)" id="background-position(1)" onChange="change('background-position(1)-y');" onPropertyChange="dwdisabled('background-position(1)');" oninput="dwdisabled('background-position(1)');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="background-position(1)-dw" id="background-position(1)-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										</select></div></td>
+									</tr>
+									<tr>
+										<td align="right">垂直位置:</td>
+										<td><div style="position: relative;float:left;">
+										<select size="1" name="background-position(2)-y" id="background-position(2)-y" onChange="replacetext('background-position(2)',this);">
+											<option value=""></option>
+											<option value="top">顶部</option>
+											<option value="center">居中</option>
+											<option value="bottom">底部</option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="background-position(2)" id="background-position(2)" onChange="change('background-position(2)-y');" onPropertyChange="dwdisabled('background-position(2)');" oninput="dwdisabled('background-position(2)');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="background-position(2)-dw" id="background-position(2)-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										</select></div></td>
+									</tr>
+								</table>
+ 
+ 
+								<table border="0" width="100%" cellpadding="0" height="193" id="yq_selectid_3" style="display:none;">
+									<tr>
+										<td align="right">单词间距:</td>
+										<td><div style="position: relative;float:left;">
+										<select size="1" name="word-spacing-y" id="word-spacing-y" onChange="replacetext('word-spacing',this);">
+										<option value=""></option>
+										<option value="normal">正常</option>
+										<option value="yq">(值)</option>
+										</select><input type="text" name="word-spacing" id="word-spacing" onChange="change('word-spacing-y');" onPropertyChange="dwdisabled('word-spacing');" oninput="dwdisabled('word-spacing');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="word-spacing-dw" id="word-spacing-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										<option>倍行高</option>
+										</select></div></td>
+									</tr>
+									<tr>
+										<td align="right">字母间距:</td>
+										<td><div style="position: relative;float:left;">
+										<select size="1" name="letter-spacing-y" id="letter-spacing-y" onChange="replacetext('letter-spacing',this);">
+										<option value=""></option>
+										<option value="normal">正常</option>
+										<option value="yq">(值)</option>
+										</select><input type="text" name="letter-spacing" id="letter-spacing" onChange="change('letter-spacing-y');" onPropertyChange="dwdisabled('letter-spacing');" oninput="dwdisabled('letter-spacing');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="letter-spacing-dw" id="letter-spacing-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										<option>倍行高</option>
+										</select></div></td>
+									</tr>
+									<tr>
+										<td align="right">垂直对齐:</td>
+										<td><div style="position: relative;float:left;">
+										<select size="1" name="vertical-align-y" id="vertical-align-y" onChange="replacetext('vertical-align',this);">
+											<option value=""></option>
+											<option value="baseline">基线</option>
+											<option value="sub">下标</option>
+											<option value="super">上标</option>
+											<option value="top">顶部</option>
+											<option value="text-top">文本顶对齐</option>
+											<option value="middle">中线对齐</option>
+											<option value="bottom">底部</option>
+											<option value="text-bottom">文本底对齐</option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="vertical-align" id="vertical-align" onChange="change('vertical-align-y');" onPropertyChange="dwdisabled('vertical-align');" oninput="dwdisabled('vertical-align');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="vertical-align-dw" id="vertical-align-dw" disabled=false>
+											<option value="%">%</option>
+										</select></div></td>
+									</tr>
+									<tr>
+										<td align="right">文本对齐:</td>
+										<td>
+										<select size="1" name="text-align" id="text-align">
+											<option value=""></option>
+											<option value="left">左对齐</option>
+											<option value="right">右对齐</option>
+											<option value="center">居中</option>
+											<option value="justify">两端对齐</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right">文字缩进:</td>
+										<td><select size="1" style="display:none;" name="text-indent-y" id="text-indent-y"></select>
+										<input type="text" name="text-indent" id="text-indent" size="6" onPropertyChange="dwdisabled('text-indent');" oninput="dwdisabled('text-indent');"> 
+										<select size="1" name="text-indent-dw" id="text-indent-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										<option>倍行高</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right">空格:</td>
+										<td>
+										<select size="1" name="white-space" id="white-space">
+											<option value=""></option>
+											<option value="normal">正常</option>
+											<option value="pre">保留</option>
+											<option value="nowrap">不换行</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right">显示:</td>
+										<td>
+										<select size="1" name="display" id="display">
+											<option value=""></option>
+											<option value="none">无</option>
+											<option value="inline">内嵌</option>
+											<option value="block">块</option>
+											<option value="list-item">列表项</option>
+											<option value="run-in">追回部分</option>
+											<option value="compact">紧凑</option>
+											<option value="marker">标记</option>
+											<option value="table">表格</option>
+											<option value="inline-table">内嵌表格</option>
+											<option value="table-row-group">表格行组</option>
+											<option value="table-header-group">表格标题组</option>
+											<option value="table-footer-group">表格注脚组</option>
+											<option value="table-row">表格行</option>
+											<option value="table-column-group">表格列组</option>
+											<option value="table-column">表格列</option>
+											<option value="table-cell">表格单位格</option>
+											<option value="table-caption">表格标题</option>
+										</select></td>
+									</tr>
+								</table>
+ 
+								<table border="0" width="100%" cellpadding="0" height="235" id="yq_selectid_4" style="display:none;">
+									<tr>
+										<td height="32" align="right" width="8%">
+										宽:</td>
+										<td height="32" width="41%"><div style="position: relative;float:left;">
+										<select size="1" name="width-y" id="width-y" class=select1 onChange="replacetext('width',this);">
+											<option value=""></option>
+											<option value="auto">自动</option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="width" id="width" class=input1 onChange="change('width-y');" onPropertyChange="dwdisabled('width');" oninput="dwdisabled('width');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="width-dw" id="width-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										<option value="%">百分比(%)</option>
+										<option>倍行高</option>
+										</select></div></td>
+										<td height="32" align="right" width="8%">
+										浮动:</td>
+										<td height="32" width="41%">
+										<select size="1" name="float" id="float">
+											<option value=""></option>
+											<option value="left">左对齐</option>
+											<option value="right">右对齐</option>
+											<option value="none">无</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td height="28" align="right" width="8%">
+										高:</td>
+										<td height="28" width="41%"><div style="position: relative;float:left;">
+										<select size="1" name="height-y" id="height-y" class=select1 onChange="replacetext('height',this);">
+											<option value=""></option>
+											<option value="auto">自动</option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="height" id="height" class=input1 onChange="change('height-y');" onPropertyChange="dwdisabled('height');" oninput="dwdisabled('height');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="height-dw" id="height-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										<option value="%">百分比(%)</option>
+										<option>倍行高</option>
+										</select></div></td>
+										<td height="28" align="right" width="8%">
+										清除:</td>
+										<td height="28" width="41%">
+										    <select size="1" name="clear" id="clear">
+											    <option value=""></option>
+											    <option value="left">左对齐</option>
+											    <option value="right">右对齐</option>
+											    <option value="both">两者</option>
+											    <option value="none">无</option>
+										    </select></td>
+									</tr>
+									<tr>
+										<td colspan="2" valign="top" align=center>
+											<fieldset style="padding: 2; width:182px; height:160px">
+												<legend>填充</legend>
+												<table border="0" width="103%" cellpadding="0" height="137">
+													<tr>
+														<td colspan="2" align="center" height="27"><input type="checkbox" class="input2" onClick="checkedall('padding',this.checked)" name="padding" id="padding" value="1">全部相同</td>
+													</tr>
+													<tr>
+														<td height="27" width="10%" align="right">上:</td>
+														<td height="27" width="86%"><div style="position: relative;float:left;">
+															<select size="1" name="padding-top-y" id="padding-top-y" class=select1 onChange="replacetext('padding-top',this);">
+																<option value=""></option>
+																<option value="yq">(值)</option>
+															</select><input type="text" name="padding-top" id="padding-top" class=input1 onChange="change('padding-top-y');" onPropertyChange="dwdisabled('padding-top');replaceall('padding');" oninput="dwdisabled('padding-top');replaceall('padding');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="padding-top-dw" id="padding-top-dw" disabled=false; onChange="replaceall('padding');">
+																		<option value="px">像素(px)</option>
+																		<option value="pt">点数(pt)</option>
+																		<option value="in">英寸(in)</option>
+																		<option value="cm">厘米(cm)</option>
+																		<option value="mm">毫米(mm)</option>
+																		<option value="pc">12pt字(pc)</option>
+																		<option value="em">字体高(em)</option>
+																		<option value="ex">字母x的高(ex)</option>
+																		<option>倍行高</option>
+																	</select></div></td>
+													</tr>
+													<tr>
+														<td height="27" width="10%" align="right">右:</td>
+														<td height="27" width="86%"><div style="position: relative;float:left;">
+														<select size="1" name="padding-right-y" id="padding-right-y" class=select1 onChange="replacetext('padding-right',this);">
+															<option value=""></option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="padding-right" id="padding-right" class=input1 onChange="change('padding-right-y');" onPropertyChange="dwdisabled('padding-right');" oninput="dwdisabled('padding-right');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="padding-right-dw" id="padding-right-dw" disabled=false>
+																		<option value="px">像素(px)</option>
+																		<option value="pt">点数(pt)</option>
+																		<option value="in">英寸(in)</option>
+																		<option value="cm">厘米(cm)</option>
+																		<option value="mm">毫米(mm)</option>
+																		<option value="pc">12pt字(pc)</option>
+																		<option value="em">字体高(em)</option>
+																		<option value="ex">字母x的高(ex)</option>
+																		<option>倍行高</option>
+																	</select></div></td>
+													</tr>
+													<tr>
+														<td height="28" width="10%" align="right">下:</td>
+														<td height="28" width="86%"><div style="position: relative;float:left;">
+														<select size="1" name="padding-bottom-y" id="padding-bottom-y" class=select1 onChange="replacetext('padding-bottom',this);">
+															<option value=""></option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="padding-bottom" id="padding-bottom" class=input1 onChange="change('padding-bottom-y');" onPropertyChange="dwdisabled('padding-bottom');" oninput="dwdisabled('padding-bottom');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="padding-bottom-dw" id="padding-bottom-dw" disabled=false>
+																		<option value="px">像素(px)</option>
+																		<option value="pt">点数(pt)</option>
+																		<option value="in">英寸(in)</option>
+																		<option value="cm">厘米(cm)</option>
+																		<option value="mm">毫米(mm)</option>
+																		<option value="pc">12pt字(pc)</option>
+																		<option value="em">字体高(em)</option>
+																		<option value="ex">字母x的高(ex)</option>
+																		<option>倍行高</option>
+																	</select></div></td>
+													</tr>
+													<tr>
+														<td height="28" width="10%" align="right">左:</td>
+														<td height="28" width="86%"><div style="position: relative;float:left;">
+														<select size="1" name="padding-left-y" id="padding-left-y" class=select1 onChange="replacetext('padding-left',this);">
+															<option value=""></option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="padding-left" id="padding-left" class=input1 onChange="change('padding-left-y');" onPropertyChange="dwdisabled('padding-left');" oninput="dwdisabled('padding-left');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="padding-left-dw" id="padding-left-dw" disabled=false>
+															<option value="px">像素(px)</option>
+															<option value="pt">点数(pt)</option>
+															<option value="in">英寸(in)</option>
+															<option value="cm">厘米(cm)</option>
+															<option value="mm">毫米(mm)</option>
+															<option value="pc">12pt字(pc)</option>
+															<option value="em">字体高(em)</option>
+															<option value="ex">字母x的高(ex)</option>
+															<option>倍行高</option>
+															</select></div></td>
+													</tr>
+												</table>
+											</fieldset></td>
+										<td colspan="2" valign="top" align=center>
+											<fieldset style="padding: 2; width:200px; height:160px">
+												<legend>边界</legend>
+												<table border="0" width="91%" cellpadding="0" height="137">
+													<tr>
+														<td colspan="2" align="center" height="27"><input type="checkbox" class="input2" name="margin" id="margin" onclick="checkedall('margin',this.checked)" value="1">全部相同</td>
+													</tr>
+													<tr>
+														<td height="27" width="10%" align="right">上:</td>
+														<td height="27" width="86%"><div style="position: relative;float:left;">
+														<select size="1" name="margin-top-y" id="margin-top-y" class=select1 onChange="replacetext('margin-top',this);">
+															<option value=""></option>
+															<option value="auto">自动</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="margin-top" id="margin-top" class=input1 onChange="change('margin-top-y');" onPropertyChange="dwdisabled('margin-top');replaceall('margin');" oninput="dwdisabled('margin-top');replaceall('margin');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="margin-top-dw" id="margin-top-dw" disabled=false onChange="replaceall('margin');">
+																	<option value="px">像素(px)</option>
+																	<option value="pt">点数(pt)</option>
+																	<option value="in">英寸(in)</option>
+																	<option value="cm">厘米(cm)</option>
+																	<option value="mm">毫米(mm)</option>
+																	<option value="pc">12pt字(pc)</option>
+																	<option value="em">字体高(em)</option>
+																	<option value="ex">字母x的高(ex)</option>
+																	<option>倍行高</option>
+																</select></div></td>
+													</tr>
+													<tr>
+														<td height="27" width="10%" align="right">右:</td>
+														<td height="27" width="86%"><div style="position: relative;float:left;">
+														<select size="1" name="margin-right-y" id="margin-right-y" class=select1 onChange="replacetext('margin-right',this);">
+															<option value=""></option>
+															<option value="auto">自动</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="margin-right" id="margin-right" class=input1 onChange="change('margin-right-y');" onPropertyChange="dwdisabled('margin-right');" oninput="dwdisabled('margin-right');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="margin-right-dw" id="margin-right-dw" disabled=false>
+																	<option value="px">像素(px)</option>
+																	<option value="pt">点数(pt)</option>
+																	<option value="in">英寸(in)</option>
+																	<option value="cm">厘米(cm)</option>
+																	<option value="mm">毫米(mm)</option>
+																	<option value="pc">12pt字(pc)</option>
+																	<option value="em">字体高(em)</option>
+																	<option value="ex">字母x的高(ex)</option>
+																	<option>倍行高</option>
+																</select></div></td>
+													</tr>
+													<tr>
+														<td height="28" width="10%" align="right">下:</td>
+														<td height="28" width="86%"><div style="position: relative;float:left;">
+														<select size="1" name="margin-bottom-y" id="margin-bottom-y" class=select1 onChange="replacetext('margin-bottom',this);">
+															<option value=""></option>
+															<option value="auto">自动</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="margin-bottom" id="margin-bottom" class=input1 onChange="change('margin-bottom-y');" onPropertyChange="dwdisabled('margin-bottom');" oninput="dwdisabled('margin-bottom');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="margin-bottom-dw" id="margin-bottom-dw" disabled=false>
+																<option value="px">像素(px)</option>
+																<option value="pt">点数(pt)</option>
+																<option value="in">英寸(in)</option>
+																<option value="cm">厘米(cm)</option>
+																<option value="mm">毫米(mm)</option>
+																<option value="pc">12pt字(pc)</option>
+																<option value="em">字体高(em)</option>
+																<option value="ex">字母x的高(ex)</option>
+																<option>倍行高</option>
+															</select></div></td>
+													</tr>
+													<tr>
+														<td height="28" width="10%" align="right">左:</td>
+														<td height="28" width="86%"><div style="position: relative;float:left;">
+														<select size="1" name="margin-left-y" id="margin-left-y" class=select1 onChange="replacetext('margin-left',this);">
+															<option value=""></option>
+															<option value="auto">自动</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="margin-left" id="margin-left" class=input1 onChange="change('margin-left-y');" onPropertyChange="dwdisabled('margin-left');" oninput="dwdisabled('margin-left');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="margin-left-dw" id="margin-left-dw" disabled=false>
+																<option value="px">像素(px)</option>
+																<option value="pt">点数(pt)</option>
+																<option value="in">英寸(in)</option>
+																<option value="cm">厘米(cm)</option>
+																<option value="mm">毫米(mm)</option>
+																<option value="pc">12pt字(pc)</option>
+																<option value="em">字体高(em)</option>
+																<option value="ex">字母x的高(ex)</option>
+																<option>倍行高</option>
+															</select></div></td>
+													</tr>
+												</table>
+										</fieldset></td>
+									</tr>
+								</table>
+								
+								<table border="0" width="100%" cellpadding="0" height="162" style="display:none;" id="yq_selectid_5">
+									<tr>
+										<td align="right" style="line-height:29px;padding-top:45px;">上:<br>右:<br>下:<br>左:</td>
+										<td valign="top"><fieldset style="padding: 2">
+											<legend>样式</legend>
+											<table border="0" width="100%" cellpadding="0" height="146">
+												<tr>
+													<td height="29" align="center"><input type="checkbox" class="input2" name="border-style" onClick="checkedall('border',this.checked,'-style')" id="border-style" value="ON">全部相同</td>
+												</tr>
+												<tr>
+													<td height="26">
+														<select size="1" name="border-top-style" id="border-top-style" onChange="replaceall('border','-style')">
+															<option value=""></option>
+															<option value="none">无</option>
+															<option value="dotted">点划线</option>
+															<option value="dashed">虚线</option>
+															<option value="solid">实线</option>
+															<option value="double">双线</option>
+															<option value="groove">槽状</option>
+															<option value="ridge">脊状</option>
+															<option value="inset">凹陷</option>
+															<option value="outset">凸出</option>
+														</select></td>
+												</tr>
+												<tr>
+													<td height="26">
+														<select size="1" name="border-right-style" id="border-right-style">
+															<option value=""></option>
+															<option value="none">无</option>
+															<option value="dotted">点划线</option>
+															<option value="dashed">虚线</option>
+															<option value="solid">实线</option>
+															<option value="double">双线</option>
+															<option value="groove">槽状</option>
+															<option value="ridge">脊状</option>
+															<option value="inset">凹陷</option>
+															<option value="outset">凸出</option>
+														</select></td>
+												</tr>
+												<tr>
+													<td>
+														<select size="1" name="border-bottom-style" id="border-bottom-style">
+															<option value=""></option>
+															<option value="none">无</option>
+															<option value="dotted">点划线</option>
+															<option value="dashed">虚线</option>
+															<option value="solid">实线</option>
+															<option value="double">双线</option>
+															<option value="groove">槽状</option>
+															<option value="ridge">脊状</option>
+															<option value="inset">凹陷</option>
+															<option value="outset">凸出</option>
+														</select></td>
+												</tr>
+												<tr>
+													<td height="26">
+														<select size="1" name="border-left-style" id="border-left-style">
+															<option value=""></option>
+															<option value="none">无</option>
+															<option value="dotted">点划线</option>
+															<option value="dashed">虚线</option>
+															<option value="solid">实线</option>
+															<option value="double">双线</option>
+															<option value="groove">槽状</option>
+															<option value="ridge">脊状</option>
+															<option value="inset">凹陷</option>
+															<option value="outset">凸出</option>
+														</select></td>
+												</tr>
+											</table>
+										</fieldset></td>
+										<td valign="top"><fieldset style="padding: 2">
+											<legend>大小</legend>
+											<table border="0" width="100%" cellpadding="0" height="146">
+												<tr>
+													<td height="29" align="center"><input type="checkbox" class="input2" name="border-width" onClick="checkedall('border',this.checked,'-width')" id="border-width" value="yq">全部相同</td>
+												</tr>
+												<tr>
+													<td height="26"><div style="position: relative;float:left;">
+														<select size="1" name="border-top-width-y" id="border-top-width-y" onChange="replacetext('border-top-width',this);replaceall('border','-width');">
+															<option value=""></option>
+															<option value="thin">细</option>
+															<option value="medium">中</option>
+															<option value="thick">粗</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="border-top-width" id="border-top-width" onChange="change('border-top-width-y');" onPropertyChange="dwdisabled('border-top-width');replaceall('border','-width');" oninput="dwdisabled('border-top-width');replaceall('border','-width');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="border-top-width-dw" id="border-top-width-dw" disabled=false onChange="replaceall('border','-width');">
+																<option value="px">像素(px)</option>
+																<option value="pt">点数(pt)</option>
+																<option value="in">英寸(in)</option>
+																<option value="cm">厘米(cm)</option>
+																<option value="mm">毫米(mm)</option>
+																<option value="pc">12pt字(pc)</option>
+																<option value="em">字体高(em)</option>
+																<option value="ex">字母x的高(ex)</option>
+																<option>倍行高</option>
+															</select></div></td>
+												</tr>
+												<tr>
+													<td height="26"><div style="position: relative;float:left;">
+														<select size="1" name="border-right-width-y" id="border-right-width-y" onChange="replacetext('border-right-width',this);">
+															<option value=""></option>
+															<option value="thin">细</option>
+															<option value="medium">中</option>
+															<option value="thick">粗</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="border-right-width" id="border-right-width" onChange="change('border-right-width-y');" onPropertyChange="dwdisabled('border-right-width');" oninput="dwdisabled('border-right-width');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="border-right-width-dw" id="border-right-width-dw" disabled=false>
+															<option value="px">像素(px)</option>
+															<option value="pt">点数(pt)</option>
+															<option value="in">英寸(in)</option>
+															<option value="cm">厘米(cm)</option>
+															<option value="mm">毫米(mm)</option>
+															<option value="pc">12pt字(pc)</option>
+															<option value="em">字体高(em)</option>
+															<option value="ex">字母x的高(ex)</option>
+															<option>倍行高</option>
+														</select></div></td>
+												</tr>
+												<tr>
+													<td><div style="position: relative;float:left;">
+														<select size="1" name="border-bottom-width-y" id="border-bottom-width-y" onChange="replacetext('border-bottom-width',this);">
+															<option value=""></option>
+															<option value="thin">细</option>
+															<option value="medium">中</option>
+															<option value="thick">粗</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="border-bottom-width" id="border-bottom-width" onChange="change('border-bottom-width-y');" onPropertyChange="dwdisabled('border-bottom-width');" oninput="dwdisabled('border-bottom-width');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="border-bottom-width-dw" id="border-bottom-width-dw" disabled=false>
+															<option value="px">像素(px)</option>
+															<option value="pt">点数(pt)</option>
+															<option value="in">英寸(in)</option>
+															<option value="cm">厘米(cm)</option>
+															<option value="mm">毫米(mm)</option>
+															<option value="pc">12pt字(pc)</option>
+															<option value="em">字体高(em)</option>
+															<option value="ex">字母x的高(ex)</option>
+															<option>倍行高</option>
+														</select></td>
+												</tr>
+												<tr>
+													<td height="26"><div style="position: relative;float:left;">
+														<select size="1" name="border-left-width-y" id="border-left-width-y" onChange="replacetext('border-left-width',this);">
+															<option value=""></option>
+															<option value="thin">细</option>
+															<option value="medium">中</option>
+															<option value="thick">粗</option>
+															<option value="yq">(值)</option>
+														</select><input type="text" name="border-left-width" id="border-left-width" onChange="change('border-left-width-y');" onPropertyChange="dwdisabled('border-left-width');" oninput="dwdisabled('border-left-width');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="border-left-width-dw" id="border-left-width-dw" disabled=false>
+															<option value="px">像素(px)</option>
+															<option value="pt">点数(pt)</option>
+															<option value="in">英寸(in)</option>
+															<option value="cm">厘米(cm)</option>
+															<option value="mm">毫米(mm)</option>
+															<option value="pc">12pt字(pc)</option>
+															<option value="em">字体高(em)</option>
+															<option value="ex">字母x的高(ex)</option>
+															<option>倍行高</option>
+														</select></div></td>
+												</tr>
+										</table></fieldset></td>
+										<td valign="top"><fieldset style="padding: 2">
+											<legend>颜色</legend>
+											<table border="0" width="100%" cellpadding="0" height="146">
+												<tr>
+													<td height="29" align="center"><input type="checkbox" class="input2" name="border-color" id="border-color" onClick="checkedall('border',this.checked,'-color')" value="yq">全部相同</td>
+												</tr>
+												<tr>
+													<td height="26"><div style="float:left;" id="border-top-color-view"><img src="images/bg.gif" onClick="DisplayClrDlg('border-top-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="border-top-color" id="border-top-color" onPropertyChange="changecolor('border-top-color');replaceall('border','-color');" oninput="changecolor('border-top-color');replaceall('border','-color');" size="6"></div></td>
+												</tr>
+												<tr>
+													<td height="26"><div style="float:left;" id="border-right-color-view"><img src="images/bg.gif" id="border-right-color-img" disabled=false onClick="DisplayClrDlg('border-right-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" onPropertyChange="changecolor('border-right-color');" oninput="changecolor('border-right-color');" id="border-right-color" name="border-right-color" size="6"></div></td>
+												</tr>
+												<tr>
+													<td height="26"><div style="float:left;" id="border-bottom-color-view"><img src="images/bg.gif" id="border-bottom-color-img" disabled=false onClick="DisplayClrDlg('border-bottom-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" onPropertyChange="changecolor('border-bottom-color');" oninput="changecolor('border-bottom-color');" id="border-bottom-color" name="border-bottom-color" size="6"></div></td>
+												</tr>
+												<tr>
+													<td height="26"><div style="float:left;" id="border-left-color-view"><img src="images/bg.gif" id="border-left-color-img" disabled=false onClick="DisplayClrDlg('border-left-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" onPropertyChange="changecolor('border-left-color');" oninput="changecolor('border-left-color');" id="border-left-color" name="border-left-color" size="6"></div></td>
+												</tr>
+											</table></fieldset></td>
+									</tr>
+									<tr>
+										<td align="right" height=2></td>
+									</tr>
+								</table>
+ 
+ 
+ 
+								<table border="0" width="100%" cellpadding="0"  height="102" style="display:none;" id="yq_selectid_6">
+									<tr>
+										<td align="right" width="25%">类型:</td>
+										<td><select size="1" name="list-style-type" id="list-style-type">
+										<option value=""></option>
+										<option value="disc">圆点</option>
+										<option value="circle">圆圈</option>
+										<option value="square">方块</option>
+										<option value="decimal">数字</option>
+										<option value="lower-roman">小写罗马数字</option>
+										<option value="upper-roman">大写罗马数字</option>
+										<option value="lower-alpha">小写字母</option>
+										<option value="upper-alpha">大写字母</option>
+										<option value="none">无</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td height="31" align="right">项目符号图像:</td>
+										<td height="31"><div style="float:left;"><input type="text" name="list-style-image" id="list-style-image" size="50"></div><div style="float:left;padding-left:2px;"><input type="button" value="上传图片" onclick="UploadFile('list-style-image', 'PIC', 'IsStyle=1&Listid=$YqListid$');" icon="icon-picture_add" /><input type="button" value="选择图片" onclick="DirImgWin($id('list-style-image'),$YqListid$,'IsStyle=1');" icon="icon-pictures" ></div></td>
+									</tr>
+									<tr>
+										<td height="33" align="right">位置:</td>
+										<td height="33">
+										<select size="1" name="list-style-position" id="list-style-position">
+										<option value=""></option>
+										<option value="inside">内</option>
+										<option value="outside">外</option>
+										</select></td>
+									</tr>
+								</table>
+
+								<table border="0" width="100%" cellpadding="0" height="236" style="display:none;" id="yq_selectid_7">
+									<tr>
+										<td width="10%" align="right">类型:</td>
+										<td width="38%">
+										<select size="1" name="position" id="position">
+											<option value=""></option>
+											<option value="absolute">绝对</option>
+											<option value="relative">相对</option>
+											<option value="static">静态</option>
+										</select></td>
+										<td align="right" width="10%">显示:</td>
+										<td width="40%">
+										<select size="1" name="visibility" id="visibility">
+											<option value=""></option>
+											<option value="inherit">继承</option>
+											<option value="visible">可见</option>
+											<option value="hidden">隐藏</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td width="10%" align="right">　</td>
+										<td width="38%">
+										　</td>
+										<td align="right" width="10%">Z轴:</td>
+										<td width="40%"><div style="position: relative;">
+										<select size="1" name="z-index-y" id="z-index-y" onChange="replacetext('z-index',this);">
+											<option value=""></option>
+											<option value="auto">自动</option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="z-index" id="z-index" onChange="change('z-index-y');" onPropertyChange="dwdisabled('z-index');" oninput="dwdisabled('z-index');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div></td>
+									</tr>
+									<tr>
+										<td width="10%" align="right">　</td>
+										<td width="38%">
+										　</td>
+										<td align="right" width="10%">溢位:</td>
+										<td width="40%">
+										<select size="1" name="overflow" id="overflow">
+											<option value=""></option>
+											<option value="visible">可见</option>
+											<option value="hidden">隐藏</option>
+											<option value="scroll">滚动</option>
+											<option value="auto">自动</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td height="148" width="201" colspan="2" valign="top">	<fieldset style="padding: 2">
+										<legend>置入</legend>
+										<table border="0" width="100%" cellpadding="0" height="120">
+											<tr>
+												<td align="right">上:</td>
+												<td width="153"><div style="position: relative;float:left;">
+													<select size="1" name="top-y" id="top-y" class=select1 onChange="replacetext('top',this);">
+														<option value=""></option>
+														<option value="auto">自动</option>
+														<option value="yq">(值)</option>
+														</select><input type="text" name="top" id="top" onChange="change('top-y');" onPropertyChange="dwdisabled('top');" oninput="dwdisabled('top');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="top-dw" id="top-dw" disabled=false>
+														<option value="px">像素(px)</option>
+														<option value="pt">点数(pt)</option>
+														<option value="in">英寸(in)</option>
+														<option value="cm">厘米(cm)</option>
+														<option value="mm">毫米(mm)</option>
+														<option value="pc">12pt字(pc)</option>
+														<option value="em">字体高(em)</option>
+														<option value="ex">字母x的高(ex)</option>
+														<option>倍行高</option>
+													</select></div></td>
+										</tr>
+										<tr>
+											<td align="right">右:</td>
+											<td width="153"><div style="position: relative;float:left;">
+												<select size="1" name="right-y" id="right-y" class=select1 onChange="replacetext('right',this);">
+													<option value=""></option>
+													<option value="auto">自动</option>
+													<option value="yq">(值)</option>
+												</select><input type="text" name="right" id="right" onChange="change('right-y');" onPropertyChange="dwdisabled('right');" oninput="dwdisabled('right');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="right-dw" id="right-dw" disabled=false>
+													<option value="px">像素(px)</option>
+													<option value="pt">点数(pt)</option>
+													<option value="in">英寸(in)</option>
+													<option value="cm">厘米(cm)</option>
+													<option value="mm">毫米(mm)</option>
+													<option value="pc">12pt字(pc)</option>
+													<option value="em">字体高(em)</option>
+													<option value="ex">字母x的高(ex)</option>
+													<option>倍行高</option>
+												</select></div></td>
+										</tr>
+										<tr>
+											<td align="right">下:</td>
+											<td width="153"><div style="position: relative;float:left;">
+												<select size="1" name="bottom-y" id="bottom-y" class=select1 onChange="replacetext('bottom',this);">
+													<option value=""></option>
+													<option value="auto">自动</option>
+													<option value="yq">(值)</option>
+												</select><input type="text" name="bottom" id="bottom" onChange="change('bottom-y');" onPropertyChange="dwdisabled('bottom');" oninput="dwdisabled('bottom');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="bottom-dw" id="bottom-dw" disabled=false>
+													<option value="px">像素(px)</option>
+													<option value="pt">点数(pt)</option>
+													<option value="in">英寸(in)</option>
+													<option value="cm">厘米(cm)</option>
+													<option value="mm">毫米(mm)</option>
+													<option value="pc">12pt字(pc)</option>
+													<option value="em">字体高(em)</option>
+													<option value="ex">字母x的高(ex)</option>
+													<option>倍行高</option>
+												</select></div></td>
+										</tr>
+										<tr>
+											<td align="right">左:</td>
+											<td width="153"><div style="position: relative;float:left;">
+												<select size="1" name="left-y" id="left-y" class=select1 onChange="replacetext('left',this);">
+													<option value=""></option>
+													<option value="auto">自动</option>
+													<option value="yq">(值)</option>
+												</select><input type="text" name="left" id="left" onChange="change('left-y');" onPropertyChange="dwdisabled('left');" oninput="dwdisabled('left');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="left-dw" id="left-dw" disabled=false>
+													<option value="px">像素(px)</option>
+													<option value="pt">点数(pt)</option>
+													<option value="in">英寸(in)</option>
+													<option value="cm">厘米(cm)</option>
+													<option value="mm">毫米(mm)</option>
+													<option value="pc">12pt字(pc)</option>
+													<option value="em">字体高(em)</option>
+													<option value="ex">字母x的高(ex)</option>
+													<option>倍行高</option>
+												</select></div></td>
+										</tr>
+									</table>
+										</fieldset></td>
+										<td height="148" colspan="2" valign="top"><fieldset style="padding: 2">
+											<legend>裁切</legend>
+												<table border="0" width="100%" cellpadding="0" height="120">
+													<tr>
+														<td align="right">上:</td>
+														<td width="164"><div style="position: relative;float:left;">
+															<select size="1" name="clip-1-y" id="clip-1-y" class=select1 onChange="replacetext('clip-1',this);">
+																<option value=""></option>
+																<option value="auto">自动</option>
+																<option value="yq">(值)</option>
+															</select><input type="text" name="clip-1" id="clip-1" onChange="change('clip-1-y');" onPropertyChange="dwdisabled('clip-1');" oninput="dwdisabled('clip-1');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="clip-1-dw" id="clip-1-dw" disabled=false>
+																<option value="px">像素(px)</option>
+																<option value="pt">点数(pt)</option>
+																<option value="in">英寸(in)</option>
+																<option value="cm">厘米(cm)</option>
+																<option value="mm">毫米(mm)</option>
+																<option value="pc">12pt字(pc)</option>
+																<option value="em">字体高(em)</option>
+																<option value="ex">字母x的高(ex)</option>
+																<option>倍行高</option>
+															</select></div></td>
+													</tr>
+													<tr>
+														<td align="right">右:</td>
+														<td width="164"><div style="position: relative;float:left;">
+															<select size="1" name="clip-2-y" id="clip-2-y" class=select1 onChange="replacetext('clip-2',this);">
+																<option value=""></option>
+																<option value="auto">自动</option>
+																<option value="yq">(值)</option>
+															</select><input type="text" name="clip-2" id="clip-2" onChange="change('clip-2-y');" onPropertyChange="dwdisabled('clip-2');" oninput="dwdisabled('clip-2');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="clip-2-dw" id="clip-2-dw" disabled=false>
+																<option value="px">像素(px)</option>
+																<option value="pt">点数(pt)</option>
+																<option value="in">英寸(in)</option>
+																<option value="cm">厘米(cm)</option>
+																<option value="mm">毫米(mm)</option>
+																<option value="pc">12pt字(pc)</option>
+																<option value="em">字体高(em)</option>
+																<option value="ex">字母x的高(ex)</option>
+																<option>倍行高</option>
+															</select></div></td>
+													</tr>
+													<tr>
+														<td align="right">下:</td>
+														<td width="164"><div style="position: relative;float:left;">
+															<select size="1" name="clip-3-y" id="clip-3-y" class=select1 onChange="replacetext('clip-3',this);">
+																<option value=""></option>
+																<option value="auto">自动</option>
+																<option value="yq">(值)</option>
+															</select><input type="text" name="clip-3" id="clip-3" onChange="change('clip-3-y');" onPropertyChange="dwdisabled('clip-3');" oninput="dwdisabled('clip-3');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="clip-3-dw" id="clip-3-dw" disabled=false>
+																<option value="px">像素(px)</option>
+																<option value="pt">点数(pt)</option>
+																<option value="in">英寸(in)</option>
+																<option value="cm">厘米(cm)</option>
+																<option value="mm">毫米(mm)</option>
+																<option value="pc">12pt字(pc)</option>
+																<option value="em">字体高(em)</option>
+																<option value="ex">字母x的高(ex)</option>
+																<option>倍行高</option>
+															</select></div></td>
+													</tr>
+													<tr>
+														<td align="right">左:</td>
+														<td width="164"><div style="position: relative;float:left;">
+															<select size="1" name="clip-4-y" id="clip-4-y" class=select1 onChange="replacetext('clip-4',this);">
+																<option value=""></option>
+																<option value="auto">自动</option>
+																<option value="yq">(值)</option>
+															</select><input type="text" name="clip-4" id="clip-4" onChange="change('clip-4-y');" onPropertyChange="dwdisabled('clip-4');" oninput="dwdisabled('clip-4');" class=input1 style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="float:left;padding-left:3px;"><select size="1" name="clip-4-dw" id="clip-4-dw" disabled=false>
+																<option value="px">像素(px)</option>
+																<option value="pt">点数(pt)</option>
+																<option value="in">英寸(in)</option>
+																<option value="cm">厘米(cm)</option>
+																<option value="mm">毫米(mm)</option>
+																<option value="pc">12pt字(pc)</option>
+																<option value="em">字体高(em)</option>
+																<option value="ex">字母x的高(ex)</option>
+																<option>倍行高</option>
+																</select></div></td>
+													</tr>
+												</table>
+											</fieldset></td>
+									</tr>
+								</table>
+								<table border="0" width="100%" cellpadding="0" style="display:none;" id="yq_selectid_8">
+									<tr>
+										<td align="right">阅读方向:</td>
+										<td>
+										<select size="1" name="direction" id="direction" style="width:150px;">
+											<option value=""></option>
+											<option value="ltr">文本方向从左到右</option>
+											<option value="rtl">文本方向从右到左</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right">单一边框:</td>
+										<td>
+										<select size="1" name="border-collapse" id="border-collapse">
+											<option value=""></option>
+											<option value="collapse">单一边框</option>
+										</select>(适用于表格)</td>
+									</tr>
+									<tr>
+										<td align="right">放大倍数:</td>
+										<td><div style="position: relative;float:left;">
+										<select size="1" name="zoom-y" id="zoom-y" onChange="replacetext('zoom',this);">
+											<option value=""></option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="zoom" id="zoom" onChange="change('zoom-y');" onPropertyChange="dwdisabled('zoom');" oninput="dwdisabled('zoom');" style="height:18px;position: absolute;top:1px;left:1px;z-index:1;"></div><div style="padding-left:3px;float:left;"><select size="1" name="zoom-dw" id="zoom-dw" disabled=false>
+											<option value="%">%</option>
+										</select></div></td>
+									</tr>
+									<tr>
+										<td align="right">自动换行:</td>
+										<td><select size="1" name="word-wrap" id="word-wrap" style="width:200px;">
+										<option value=""></option>
+										<option value="normal">允许内容顶开指定的容器边界</option>
+										<option value="break-word">内容将在边界内换行</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td align="right">
+										最小高:</td>
+										<td><div style="position: relative;float:left;">
+										<select size="1" name="min-height-y" id="min-height-y" class=select1 onChange="replacetext('min-height',this);">
+											<option value=""></option>
+											<option value="yq">(值)</option>
+										</select><input type="text" name="min-height" id="min-height" class=input1 onChange="change('min-height-y');" onPropertyChange="dwdisabled('min-height');" oninput="dwdisabled('min-height');" style="position: absolute;top:1px;left:1px;z-index:1;"></div><div style="padding-left:3px;float:left;"><select size="1" name="min-height-dw" id="min-height-dw" disabled=false>
+										<option value="px">像素(px)</option>
+										<option value="pt">点数(pt)</option>
+										<option value="in">英寸(in)</option>
+										<option value="cm">厘米(cm)</option>
+										<option value="mm">毫米(mm)</option>
+										<option value="pc">12pt字(pc)</option>
+										<option value="em">字体高(em)</option>
+										<option value="ex">字母x的高(ex)</option>
+										<option>倍行高</option>
+										</select></div></td>
+									</tr>
+									<tr>
+										<td align="right" width="15%">光标:</td>
+										<td><select size="1" name="cursor" id="cursor">
+										<option value=""></option>
+										<option value="pointer">pointer</option>
+										<option value="crosshair">crosshair</option>
+										<option value="text">text</option>
+										<option value="wait">wait</option>
+										<option value="default">default</option>
+										<option value="help">help</option>
+										<option value="e-resize">e-resize</option>
+										<option value="ne-resize">ne-resize</option>
+										<option value="n-resize">n-resize</option>
+										<option value="nw-resize">nw-resize</option>
+										<option value="w-resize">w-resize</option>
+										<option value="sw-resize">sw-resize</option>
+										<option value="s-resize">s-resize</option>
+										<option value="se-resize">se-resize</option>
+										<option value="auto">auto</option>
+									</select></td>
+									</tr>
+									<tr>
+										<td height="32" align="right">位置:</td>
+										<td height="32"><div style="position: relative;">
+										<select size="1" name="filter-y" id="filter-y" style="width:350px;" onChange="replacetext('filter',this,1);">
+										<option value=""></option>
+										<option value="Alpha(Opacity=?, FinishOpacity=?, Style=?, StartX=?, StartY=?, FinishX=?, FinishY=?)">Alpha设置透明层次</option>
+										<option value="BlendTrans(Duration=?)">BlendTrans(Duration=?)</option>
+										<option value="Blur(Add=?, Direction=?, Strength=?)">Blur创建高速度移动效果，即模糊效果</option>
+										<option value="Chroma(Color=?)">Chroma制作专用颜色透明</option>
+										<option value="DropShadow(Color=?, OffX=?, OffY=?, Positive=?)">DropShadow创建对象的固定影子</option>
+										<option value="FlipH">FlipH创建水平镜像图片</option>
+										<option value="FlipV">FlipV创建垂直镜像图片</option>
+										<option value="Glow(Color=?, Strength=?)">Glow加光辉在附近对象的边外</option>
+										<option value="Gray">Gray把图片灰度化</option>
+										<option value="Invert">Invert反色</option>
+										<option value="Light">Light创建光源在对象上</option>
+										<option value="Mask(Color=?)">Mask创建透明掩膜在对象上</option>
+										<option value="RevealTrans(Duration=?, Transition=?)">RevealTrans(Duration=?, Transition=?)</option>
+										<option value="Shadow(Color=?, Direction=?)">Shadow创建偏移固定影子</option>
+										<option value="Wave(Add=?, Freq=?, LightStrength=?, Phase=?, Strength=?)">Wave波纹效果</option>
+										<option value="Xray">Xray使对象变的像被x光照射一样</option>
+										</select><input type="text" name="filter" id="filter" onChange="change('filter-y');" onPropertyChange="dwdisabled('filter');" oninput="dwdisabled('filter');" style="width:331px;position: absolute;top:1px;left:1px;z-index:1;"></div></td>
+									</tr>
+								</table>
+								<table border="0" width="100%" cellpadding="0" style="display:none;" id="yq_selectid_9">
+									<tr>
+										<td width=100 align="right">3D立体光:</td>
+										<td><div style="float:left;" id="scrollbar-3dlight-color-view"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('scrollbar-3dlight-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="scrollbar-3dlight-color" id="scrollbar-3dlight-color" size="20"></div></td>
+									</tr>
+									<tr>
+										<td align="right">箭头颜色:</td>
+										<td><div style="float:left;" id="scrollbar-arrow-color-view"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('scrollbar-arrow-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="scrollbar-arrow-color" id="scrollbar-arrow-color" size="20"></div></td>
+									</tr>
+									<tr>
+										<td align="right">基础颜色:</td>
+										<td><div style="float:left;" id="scrollbar-base-color-view"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('scrollbar-base-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="scrollbar-base-color" id="scrollbar-base-color" size="20"></div></td>
+									</tr>
+									<tr>
+										<td align="right">阴影色:</td>
+										<td><div style="float:left;" id="scrollbar-darkshadow-color-view"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('scrollbar-darkshadow-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="scrollbar-darkshadow-color" id="scrollbar-darkshadow-color" size="20"></div></td>
+									</tr>
+									<tr>
+										<td align="right">前景色:</td>
+										<td><div style="float:left;" id="scrollbar-face-color-view"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('scrollbar-face-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="scrollbar-face-color" size="20"></div></td>
+									</tr>
+									<tr>
+										<td align="right">加亮区:</td>
+										<td><div style="float:left;" id="scrollbar-highlight-color-view"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('scrollbar-highlight-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="scrollbar-highlight-color" id="scrollbar-highlight-color" size="20"></div></td>
+									</tr>
+									<tr>
+										<td align="right">暗边框:</td>
+										<td><div style="float:left;" id="scrollbar-shadow-color-view"><img src="images/bg.gif" style="cursor:pointer;" onClick="DisplayClrDlg('scrollbar-shadow-color-view');" width=18 height=17></div><div style="float:left;"><input type="text" name="scrollbar-shadow-color" id="scrollbar-shadow-color" size="20"></div></td>
+									</tr>
+								</table>
+ 
+								<table border="0" width="100%" cellpadding="0" style="display:none;" id="yq_selectid_10">
+									<tr>
+										<td width=90 align="right">其它代码:</td>
+										<td><textarea name="other_code" id="other_code" cols="45" rows="12"></textarea></td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,3 @@
+﻿body div#tooltip { position:absolute;z-index:100000;max-width:200px;width:auto !important;width:200px;background:#000;text-align:left;padding:5px;min-height:1em;word-break:break-all;}
+body div#tooltip p { margin:0;padding:0;color:#fff;font:12px verdana,arial,sans-serif; }
+body div#tooltip p em { display:block;margin-top:3px;color:#f60;font-style:normal;font-weight:bold; word-break:break-all;}

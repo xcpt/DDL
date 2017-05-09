@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F607C66-F5E9-4408-8477-61D50EA1321E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web.UI</RootNamespace>
+    <AssemblyName>Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c60fb5275b90385, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\基础DLL\Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SyCms.Window">
+      <HintPath>..\..\..\Cms\Cms\Bin\SyCms.Window.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminFileType.cs" />
+    <Compile Include="Ami.cs" />
+    <Compile Include="APP.cs" />
+    <Compile Include="AutoPlay.cs" />
+    <Compile Include="baby\album.cs" />
+    <Compile Include="baby\album_Praise.cs" />
+    <Compile Include="baby\Cycle.cs" />
+    <Compile Include="baby\height.cs" />
+    <Compile Include="baby\weight.cs" />
+    <Compile Include="customer\Card.cs" />
+    <Compile Include="customer\Cardbusinessid.cs" />
+    <Compile Include="customer\CardLog.cs" />
+    <Compile Include="customer\CardNoLog.cs" />
+    <Compile Include="customer\CardType.cs" />
+    <Compile Include="customer\User.cs" />
+    <Compile Include="customer\Userappointment.cs" />
+    <Compile Include="customer\UserappointmentLog.cs" />
+    <Compile Include="customer\UserappointmentSetup.cs" />
+    <Compile Include="customer\UserConsumption.cs" />
+    <Compile Include="customer\UserConsumptionSatisfaction.cs" />
+    <Compile Include="customer\User_Card_Log.cs" />
+    <Compile Include="customer\User_Stores.cs" />
+    <Compile Include="customer\User_Stores_Consumption.cs" />
+    <Compile Include="Data\Basic.cs" />
+    <Compile Include="Default.cs" />
+    <Compile Include="FilePermissions.cs" />
+    <Compile Include="FileUpExt.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Marketing\Visit.cs" />
+    <Compile Include="MenuClass.cs" />
+    <Compile Include="MenuFiles.cs" />
+    <Compile Include="Mobile\Message.cs" />
+    <Compile Include="Mobile\MessageBuy.cs" />
+    <Compile Include="Mobile\MessageLog.cs" />
+    <Compile Include="Mobile\MessageSetup.cs" />
+    <Compile Include="Mobile\MessageTemplate.cs" />
+    <Compile Include="Permissions.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportform\AllTotal.cs" />
+    <Compile Include="Reportform\Businessanalysis.cs" />
+    <Compile Include="Reportform\CardNumber.cs" />
+    <Compile Include="Reportform\community.cs" />
+    <Compile Include="Reportform\communityCard.cs" />
+    <Compile Include="Reportform\communityCommodity.cs" />
+    <Compile Include="Reportform\Consumption.cs" />
+    <Compile Include="Reportform\expired.cs" />
+    <Compile Include="Reportform\expiredall.cs" />
+    <Compile Include="Reportform\frequency.cs" />
+    <Compile Include="Reportform\TimeNo.cs" />
+    <Compile Include="Reportform\Timeslot.cs" />
+    <Compile Include="Reportform\Week.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="score\exchange.cs" />
+    <Compile Include="score\log.cs" />
+    <Compile Include="score\rule.cs" />
+    <Compile Include="Staff\department.cs" />
+    <Compile Include="Staff\member.cs" />
+    <Compile Include="Staff\performance.cs" />
+    <Compile Include="Staff\position.cs" />
+    <Compile Include="Staff\position_Setup.cs" />
+    <Compile Include="Staff\score.cs" />
+    <Compile Include="Staff\swimteacher.cs" />
+    <Compile Include="Staff\WageMonth.cs" />
+    <Compile Include="Sys\Category.cs" />
+    <Compile Include="Sys\Commodity.cs" />
+    <Compile Include="Sys\community.cs" />
+    <Compile Include="Sys\mamas.cs" />
+    <Compile Include="Sys\Message.cs" />
+    <Compile Include="Sys\News.cs" />
+    <Compile Include="Sys\SiteInfo.cs" />
+    <Compile Include="Sys\stores.cs" />
+    <Compile Include="UserLogTotal.cs" />
+    <Compile Include="Users.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Web.DAL\Web.DAL.csproj">
+      <Project>{d58bf69a-249c-4ff1-add1-74ea5c8fce84}</Project>
+      <Name>Web.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web.Model\Web.Model.csproj">
+      <Project>{98a98a07-0409-4731-bb18-b2f5b6339314}</Project>
+      <Name>Web.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

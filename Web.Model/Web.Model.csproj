@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98A98A07-0409-4731-BB18-B2F5B6339314}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web.Model</RootNamespace>
+    <AssemblyName>Web.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminFileTypeValue.cs" />
+    <Compile Include="baby\album.cs" />
+    <Compile Include="baby\album_Praise.cs" />
+    <Compile Include="baby\Cycle.cs" />
+    <Compile Include="baby\height.cs" />
+    <Compile Include="baby\weight.cs" />
+    <Compile Include="Baidu\index.cs" />
+    <Compile Include="Baidu\results.cs" />
+    <Compile Include="Baidu\Tq.cs" />
+    <Compile Include="Baidu\weather_data.cs" />
+    <Compile Include="customer\Card.cs" />
+    <Compile Include="customer\Cardbusinessid.cs" />
+    <Compile Include="customer\CardLog.cs" />
+    <Compile Include="customer\CardNoLog.cs" />
+    <Compile Include="customer\CardType.cs" />
+    <Compile Include="customer\User.cs" />
+    <Compile Include="customer\Userappointment.cs" />
+    <Compile Include="customer\UserappointmentLog.cs" />
+    <Compile Include="customer\UserappointmentSetup.cs" />
+    <Compile Include="customer\UserConsumption.cs" />
+    <Compile Include="customer\UserConsumptionSatisfaction.cs" />
+    <Compile Include="customer\User_Stores.cs" />
+    <Compile Include="customer\User_Stores_Consumption.cs" />
+    <Compile Include="customer\User_Card_Log.cs" />
+    <Compile Include="Data\Basic.cs" />
+    <Compile Include="FilePermissions.cs" />
+    <Compile Include="Marketing\Visit.cs" />
+    <Compile Include="Membership.cs" />
+    <Compile Include="MenuClass.cs" />
+    <Compile Include="MenuClassFile.cs" />
+    <Compile Include="MenuClassFileCount.cs" />
+    <Compile Include="MenuFiles.cs" />
+    <Compile Include="Mobile\Message.cs" />
+    <Compile Include="Mobile\MessageBuy.cs" />
+    <Compile Include="Mobile\MessageLog.cs" />
+    <Compile Include="Mobile\MessageTemplate.cs" />
+    <Compile Include="Mobile\MessageSetup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="score\exchange.cs" />
+    <Compile Include="score\log.cs" />
+    <Compile Include="score\rule.cs" />
+    <Compile Include="Staff\department.cs" />
+    <Compile Include="Staff\member.cs" />
+    <Compile Include="Staff\performance.cs" />
+    <Compile Include="Staff\position.cs" />
+    <Compile Include="Staff\position_Setup.cs" />
+    <Compile Include="Staff\score.cs" />
+    <Compile Include="Staff\swimteacher.cs" />
+    <Compile Include="Staff\WageList.cs" />
+    <Compile Include="Staff\WageMonth.cs" />
+    <Compile Include="Sys\Category.cs" />
+    <Compile Include="Sys\Commodity.cs" />
+    <Compile Include="Sys\community.cs" />
+    <Compile Include="Sys\mamas.cs" />
+    <Compile Include="Sys\Message.cs" />
+    <Compile Include="Sys\News.cs" />
+    <Compile Include="Sys\stores.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="UserLogin.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

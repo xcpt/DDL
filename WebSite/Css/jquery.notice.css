@@ -1,0 +1,60 @@
+.notice-wrap {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    width: 300px;
+    z-index: 99;
+}
+
+* html .notice-wrap {
+    position: absolute;
+}
+
+.notice-item {
+    background: #333;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    color: #eee;
+    padding: 15px 12px;
+    font-family: Arial,"simsun",sans-serif;
+    font-size: 12px;
+    display: block;
+    position: relative;
+    margin: 0 0 1px 0;
+}
+
+.notice-item-close {
+    position: absolute;
+    font-family: Arial,"simsun",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.notice-item-open {
+    position: absolute;
+    font-family: Arial,"simsun",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    right: 26px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.notice-content {
+    margin-top: 15px;
+}
+
+.notice-wrap .success {
+    background-color: #090;
+}
+
+.notice-wrap .error {
+    background-color: #900;
+}
+
+.notice-wrap a {
+    color: #fff;
+}

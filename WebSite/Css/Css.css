@@ -1,0 +1,64 @@
+﻿.cke_editor td ,.cke_editor tr,.cke_editor,.cke_editor th,.cke_editor tbody{margin:0;padding:0;border:0;height:auto;}
+
+.SycmsLabelCss{cursor:pointer;padding:3px;border:solid 1px #c0c0c0;margin:2px;}
+.SycmsLabelCss:hover{color:#ffffff;background-color:#0a246a;}
+.SycmsLabelCssHover{color:#ffffff;background-color:#0a246a;}
+
+.disabled{color:#000000}
+fieldset{border:1px solid #c0c0c0;}
+fieldset legend{height:25px;}
+hr{border:0px;border-bottom:1px solid #c0c0c0;height:0px;}
+.ContentPageList{padding-top:5px;}
+.ContentPageList ol li{padding-top:5px;}
+.ContentPageList ol li input{width:400px;}
+
+
+.TextAreaSyCms{position:relative;overflow:hidden;background-color:#fff;border:1px solid #c0c0c0;}
+
+
+.TextAreaSyCms .viewsycms{background-color:#b8d6fb;color:#b8d6fb;border-bottom:1px solid #3099ff;min-height:20px;margin:0px;padding:0px}
+.TextAreaSyCms .viewsycmsred{background-color:#3099ff;color:#3099ff;border:0px;}
+
+.TextAreaSyCms .TextAreaSyCmsFont{padding:0px;font-family:Monospace;font-size:14px;font-weight:400;font-style:normal;font-size-adjust:none;color:#000;text-transform:none;text-decoration:none;letter-spacing:normal;word-spacing:0;line-height:21px;text-align:start;vertical-align:text-bottom;direction:ltr;text-overflow:clip}
+
+.TextAreaSyCms .TextAreaSyCmsPackage{text-align:left;font-size:14px;margin:1px 0 0 1px;padding-bottom:5px;overflow-x:hidden;overflow-y:scroll;position:absolute;top:0px;left:35px;color:#fff;z-index:1;white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */}
+.TextAreaSyCms .TextArea{resize:none;font-size:14px;background:transparent;overflow-y:scroll;color:#000;position:absolute;top:0px;left:35px;z-index:2;border:0px;white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */}
+.TextAreaSyCms .TextAreaSyCmsLine{text-align:right;background-color:#ededed;position:absolute;top:0px;left:0px;width:30px;padding-right:5px;z-index:3;}
+.TextAreaSyCmsChange {
+border:1px solid blue;
+}
+.inputdisabled{color:#000000;background-color:#EDEDED;border:1px solid #c0c0c0;}
+
+    .Sycms_Content{overflow:hidden;}
+    .Sycms_Content span{cursor:pointer}
+    .Sycms_Content img{padding:3px 3px;}
+    .Sycms_Content div{padding:1px 0px;}
+    .Sycms_Content .sycmshtml,.Sycms_Content b{cursor:pointer;}
+    .Sycms_Content .red{color:red;}
+    .Sycms_Content .blue{color:red;}
+    .Sycms_Content .imgadd{width:20px;text-align:center;display:block;float:left;}
+    .Sycms_Content .select{background-color:#96D9F9;}
+    .Sycms_Content .overselect{background-color:#E8F6FD;}
+    .Sycms_Content .htmlalt{color:Blue;display:none;}
+    span.deldir{cursor:pointer;}
+
+.taskmess {
+    height:300px;overflow-x:hidden;overflow-y:auto;
+}
+.FileListDiv {clear:both;max-height:300px;overflow-y:scroll;padding-left:25px;}
+.FileListDiv li {min-height:60px;}
+.InstallButton {
+background-color:#6bdc1d;
+padding:8px;
+border-radius:6px;
+box-shadow: 0 1px 3px rgba(127, 127, 127, 0.4);
+margin:5px;
+}
